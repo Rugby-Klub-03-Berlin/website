@@ -29,7 +29,7 @@ export default function AboutSection() {
       id: 1,
       image: "/images/Jugend.jpeg",
       text_1:
-        "Bei uns gibt es Training für alle ab 3 1/2 Jahren. Angeleitet von unseren Übungsleiter:innen trainieren die Altersklassen regelmäßig bei uns in der Buschallee.",
+        "Bei uns gibt es Training für alle ab 2 1/2 Jahren. Angeleitet von unseren Übungsleiter:innen trainieren die Altersklassen regelmäßig bei uns in der Buschallee.",
       text_2:
         "Interessiert an einem Schnuppertraining? Meldet euch bei jugend@rugbyklub03.berlin",
     },
