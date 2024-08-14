@@ -3,6 +3,7 @@ import FooterBottom from "@/components/Footer";
 import { GlobalContextProvider } from "../context/GlobalContext";
 import Navbar from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Rugby Klub 03 Berlin",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           <FooterBottom />
         </GlobalContextProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
