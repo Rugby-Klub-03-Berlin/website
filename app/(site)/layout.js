@@ -2,6 +2,7 @@ import "../globals.css";
 import FooterBottom from "@/components/Footer";
 import { GlobalContextProvider } from "../context/GlobalContext";
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Rugby Klub 03 Berlin",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
           {children}
           <FooterBottom />
         </GlobalContextProvider>
+        <Analytics />
       </body>
     </html>
   );
