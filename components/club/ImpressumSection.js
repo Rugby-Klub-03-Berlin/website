@@ -37,7 +37,7 @@ const ImpressumSection = () => {
             <br /> <br />
             <div className="font-bold">Umsatzsteuer-ID:</div>
             Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
-            <br /> DE195262236
+            <br /> 27/617/61962
             <br /> <br />
             <div className="font-bold">
               Verbraucherstreitbeilegung / Universalschlichtungsstelle:
