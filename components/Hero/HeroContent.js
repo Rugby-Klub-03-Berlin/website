@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { space } from "@/public/fonts/fonts";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
