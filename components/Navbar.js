@@ -6,6 +6,7 @@ import { space } from "@/public/fonts/fonts";
 import { motion, AnimatePresence } from "framer-motion";
 import classNames from "classnames";
 import { ExternalLink, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Box = ({ delay, title, Href, icon, target }) => {
   const [scroll, setScroll] = useState(false);
@@ -134,6 +135,8 @@ const Navbar = () => {
       window.removeEventListener("resize", closeHamburgerNavigation);
     };
   }, [setHambugerMenuIsOpen]);
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -416,7 +419,12 @@ const Navbar = () => {
                 )}
               />
               <div onClick={() => setHambugerMenuIsOpen(false)}>
-                <Box delay={0.6} title={"Teams"} Href={"/teams"} icon={false} />
+                <Box
+                  delay={0.6}
+                  title={t("common.club")}
+                  Href={"/teams"}
+                  icon={false}
+                />
               </div>
               <span
                 className={classNames(
