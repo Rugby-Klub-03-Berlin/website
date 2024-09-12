@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import classNames from "classnames";
 import { ExternalLink, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { LanguageToggle } from "./ui/languageToggle";
+// import { LanguageToggle } from "./ui/languageToggle";
 
 const Box = ({ delay, title, Href, icon, target }) => {
   const [scroll, setScroll] = useState(false);
@@ -258,7 +258,7 @@ const Navbar = () => {
                   }}
                   className="flex items-center gap-x-3"
                 >
-                  <LanguageToggle locale={locale} />
+                  {/* <LanguageToggle locale={locale} /> */}
                   <label
                     type="button"
                     className="relative group p-2 px-3 flex items-center gap-x-2 border border-dominantColor cursor-pointer text-dominantColor font-medium hover:text-black  duration-300 transition"
@@ -525,7 +525,7 @@ const Navbar = () => {
                 }}
                 className="flex items-center gap-x-6"
               >
-                <LanguageToggle locale={locale} />
+                {/* <LanguageToggle locale={locale} /> */}
                 <label
                   type="button"
                   className="relative group p-2 px-3 flex items-center gap-x-2 border border-dominantColor my-3 cursor-pointer text-dominantColor font-medium hover:text-black  duration-300 transition"
