@@ -11,9 +11,11 @@ import {
 } from "lucide-react";
 import classNames from "classnames";
 import { getDocuments } from "@/sanity/sanity-utils";
+import { useTranslation } from "react-i18next";
 
 export default function Dokumente() {
   const [documents, setDocuments] = useState([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.getElementById("documents").onmousemove = (e) => {
@@ -61,11 +63,10 @@ export default function Dokumente() {
                   space.className
                 )}
               >
-                Dokumente
+                {t("documents.title")}
               </div>
               <div className="text-neutral-200 pb-10">
-                Hier findest du Vereinsdokumente wie unsere Satzung oder unsere
-                aktuelle Beitragsordnung.
+                {t("documents.description")}
                 <br />
               </div>
               <div
@@ -102,11 +103,11 @@ export default function Dokumente() {
                 ))}
               </div>
               <div className="mt-10 md:mt-14">
-                Du bist hier, um
+                {t("documents.member.titleStart")}
                 <text className=" bg-dominantColor text-black px-1 mx-1">
-                  Mitglied
+                  {t("documents.member.marked")}
                 </text>
-                bei uns zu werden? Yay! Dann erfährst du hier, wie es geht:
+                {t("documents.member.titleEnd")}
                 <ul class="relative flex flex-col md:flex-row gap-2 mb-10 mt-10">
                   <li class="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
                     <div class="min-w-[28px] min-h-[28px] flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
@@ -117,9 +118,7 @@ export default function Dokumente() {
                     </div>
                     <div class="grow md:grow-0 md:mt-3 pb-5">
                       <p class="text-sm text-neutral-300">
-                        Lade dir unseren Mitgliedsantrag samt Einwilligung
-                        Datenschutz herunter oder nimm dir ein Exemplar im
-                        Klubhaus mit (direkt an der Tür).
+                        {t("documents.member.steps.first")}
                       </p>
                     </div>
                   </li>
@@ -133,7 +132,7 @@ export default function Dokumente() {
                     </div>
                     <div class="grow md:grow-0 md:mt-3 pb-5">
                       <p class="text-sm text-neutral-300">
-                        Fülle beide Dokumente aus und unterschreibe sie.
+                        {t("documents.member.steps.second")}
                       </p>
                     </div>
                   </li>
@@ -147,9 +146,7 @@ export default function Dokumente() {
                     </div>
                     <div class="grow md:grow-0 md:mt-3 pb-5">
                       <p class="text-sm text-neutral-300">
-                        Schicke sie per Mail an mitglieder@rugbyklub03.berlin
-                        oder gib sie bei uns im Klubhaus ab (Fach hinter der
-                        Theke)
+                        {t("documents.member.steps.third")}
                       </p>
                     </div>
                   </li>
@@ -162,8 +159,7 @@ export default function Dokumente() {
                     </div>
                     <div class="grow md:grow-0 md:mt-3 pb-5">
                       <p class="text-sm text-neutral-300">
-                        Du bist nun Teil der RK-Familie. Wir freuen uns auf die
-                        gemeinsame Zeit mit dir!
+                        {t("documents.member.steps.fourth")}
                       </p>
                     </div>
                   </li>

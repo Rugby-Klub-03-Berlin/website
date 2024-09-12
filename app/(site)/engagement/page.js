@@ -3,40 +3,44 @@ import { poppins, space } from "@/public/fonts/fonts";
 import classNames from "classnames";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
-
-const engagements = [
-  {
-    title: "Die Tafelrunde",
-    description:
-      "Du warst schon einmal bei einem Heimspieltag oder anderem Event bei uns in der Buschallee und hast dich über das reichhaltige Angebot an Kuchen, Grillgut und Getränken gefreut? Du freust dich, deine Mitmenschen kulinarisch glücklich zu machen? Dann bist du bei unserer Tafelrunde bestens aufgehoben. Herz und Seele einer jeder Veranstaltung bei uns in der Buschallee freut sich unsere allererste Reihe über jedes neue Mitglied.",
-    contact: "Mail: tafelrunde@rugbyklub03.berlin",
-    extra: <></>,
-  },
-  {
-    title: "Das Event-Team",
-    description:
-      "Partys sind voll dein Ding? Dann bist du bei unserem Event-Team genau richtig! Egal ob Sommerfest, Weihnachtsmarkt, Laternenfest… dank dieser Arbeitsgruppe werden die Vereinsfeiern stets zu einem vollen Erfolg. Da es immer Gründe für eine Party gibt, hat das Event-Team immer alle Hände voll zu tun und du als leidenschaftlicher Partyplaner:in, Barkeeper:in, DJ, Entertainer:in oder Organisationstalent bist dort herzlich eingeladen.",
-    contact: "Mail: event@rugbyklub03.berlin",
-    extra: <></>,
-  },
-  {
-    title: "Finanzielle Unterstützung",
-    description:
-      "Vor allem die Nachwuchsarbeit kostet unseren Verein einiges an Geld, sodass wir uns über jede finanzielle Spende freuen, um unseren Jüngsten tolle Trainings- und Wettkampferlebnisse zu ermöglichen. Unsere Kontodaten findet ihr hier, wir stellen auch gerne Spendenbescheinigungen aus:",
-    contact: "Mail: finanzen@rugbyklub03.berlin",
-    extra: (
-      <div className="text-neutral-400 text-sm pt-10">
-        Rugby Klub 03 Berlin <br />
-        Berliner Sparkasse <br />
-        <text className="font-bold">IBAN:</text> DE30 100 500 00 4133356336
-        <br />
-        <text className="font-bold">BIC:</text> BELADEBEXXX
-      </div>
-    ),
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Engagement() {
+  const t = useTranslation();
+
+  const engagements = [
+    {
+      title: t("volunteer.workingGroups.gathering.title"),
+      description: t("volunteer.workingGroups.gathering.content"),
+      contact: "Mail: " + t("volunteer.workingGroups.gathering.email"),
+      extra: <></>,
+    },
+    {
+      title: t("volunteer.workingGroups.eventTeam.title"),
+      description: t("volunteer.workingGroups.eventTeam.content"),
+      contact: "Mail: " + t("volunteer.workingGroups.eventTeam.email"),
+      extra: <></>,
+    },
+    {
+      title: t("volunteer.workingGroups.financialSupport.title"),
+      description: t("volunteer.workingGroups.financialSupport.content"),
+      contact: "Mail: " + t("volunteer.workingGroups.financialSupport.email"),
+      extra: (
+        <div className="text-neutral-400 text-sm pt-10">
+          {t("common.club")}
+          <br />
+          {t("volunteer.workingGroups.financialSupport.bankingDetails.bank")}
+          <br />
+          <text className="font-bold">IBAN:</text>{" "}
+          {t("volunteer.workingGroups.financialSupport.bankingDetails.iban")}
+          <br />
+          <text className="font-bold">BIC:</text>{" "}
+          {t("volunteer.workingGroups.financialSupport.bankingDetails.bic")}
+        </div>
+      ),
+    },
+  ];
+
   useEffect(() => {
     document.getElementById("categories").onmousemove = (e) => {
       for (const engagementcard of document.getElementsByClassName(
@@ -51,6 +55,7 @@ export default function Engagement() {
       }
     };
   }, []);
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -72,16 +77,10 @@ export default function Engagement() {
           <div className="max-w-[81rem] px-[3%] mx-auto mb-4">
             <h1 className={classNames("mb-10", poppins.className)}>
               <div className={classNames("text-4xl pb-10", space.className)}>
-                Engagement im Verein
+                {t("volunteer.title")}
               </div>
               <div className="text-neutral-200 text-md">
-                Unser Vereinsleben lässt sich nur dank unserer vielen
-                engagierten Mitglieder aufrechterhalten. Dabei haben sich in den
-                letzten Jahren verschiedene Arbeitsgruppen gebildet, die sich
-                immer über neue Mitstreitende freuen. Auch du möchtest dich
-                stärker in den Verein einbringen und findest dich und deine
-                Fähigkeiten und Vorlieben bei den Arbeitsgruppen wieder? Dann
-                haben wir hier die Kontaktdaten für dich:
+                {t("volunteer.content")}
               </div>
             </h1>
             <div
