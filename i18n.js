@@ -5,6 +5,8 @@ import en from "./locales/en.json";
 import de from "./locales/de.json";
 import fr from "./locales/fr.json";
 
+export const locales = ["de", "en", "fr"];
+
 export const localeNames = {
   de: { name: "Deutsch", flag: "🇩🇪" },
   en: { name: "English", flag: "🇬🇧" },
