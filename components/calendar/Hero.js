@@ -2,7 +2,10 @@
 import { Divider } from "antd";
 import { space } from "@/public/fonts/fonts";
 import classNames from "classnames";
+import { useTranslation } from "react-i18next";
+
 export default function Hero() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-between items-left md:items-center">
@@ -12,7 +15,7 @@ export default function Hero() {
             space.className
           )}
         >
-          Termine
+          {t("dates.title")}
         </div>
       </div>
       <Divider />

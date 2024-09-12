@@ -7,86 +7,12 @@ import { useGlobalContext } from "@/app/context/GlobalContext";
 import Link from "next/link";
 import classNames from "classnames";
 import { getBoards } from "@/sanity/sanity-utils";
+import { useTranslation } from "react-i18next";
 
 const BoardSection = () => {
-  const { data, setData } = useGlobalContext();
   const [avatars, setAvatars] = useState([{}]);
-  const persons = [
-    {
-      id: 1,
-      name: "Marc Berger",
-      position: "1. Vorsitzender",
-      image:
-        "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80",
-      description:
-        "Vereinsvorsitz, vertritt den Verein nach außen, Verbandsarbeit",
-      email: "vorsitzender@rugbyklub03.berlin",
-    },
-    {
-      id: 2,
-      name: "Sophie Doering",
-      position: "2. Vorsitzende",
-      image:
-        "https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80",
-      description: "Vertragsmanagement, Vereinsstruktur",
-      email: "vorsitzender@rugbyklub03.berlin",
-    },
-    {
-      id: 3,
-      name: "Kolja Nährig",
-      position: "2. Vorsitzender",
-      image:
-        "https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80",
-      description: "Schutzkommission, ethische Fragen",
-      email: "vorsitzender@rugbyklub03.berlin",
-    },
-    {
-      id: 4,
-      name: "Julie Cunningham",
-      position: "2. Vorsitzende",
-      image:
-        "https://images.unsplash.com/photo-1515621061946-eff1c2a352bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80",
-      description: "Internafonale Beziehungen, Eventkoordination",
-      email: "vorsitzender@rugbyklub03.berlin",
-    },
-    {
-      id: 5,
-      name: "Thomas Gabler",
-      position: "Kassenwart",
-      image:
-        "https://images.unsplash.com/photo-1514846226882-28b324ef7f28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80",
-      description: "Zahlungsverkehr, Kassenverwaltung, Finanzpläne",
-      email: "vorsitzender@rugbyklub03.berlin",
-    },
-    {
-      id: 6,
-      name: "Gert Lieck",
-      position: "Sportwart",
-      image:
-        "https://images.unsplash.com/photo-1558507652-2d9626c4e67a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80",
-      description:
-        "Koordination des Sportbetriebs, Schnittstelle zum Bezirksamt",
-      email: "vorsitzender@rugbyklub03.berlin",
-    },
-    {
-      id: 8,
-      name: "Martin Tormann",
-      position: "Mitgliederbeauftragter",
-      image:
-        "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80",
-      description: "Mitgliederverwaltung, Konfliktmanagement",
-      email: "vorsitzender@rugbyklub03.berlin",
-    },
-    {
-      id: 9,
-      name: "Svenja Holper",
-      position: "Pressewartin",
-      image:
-        "https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80",
-      description: "Website, Social Media, Kontakt zu externen Medien",
-      email: "vorsitzender@rugbyklub03.berlin",
-    },
-  ];
+  const { t } = useTranslation();
+
   useEffect(() => {
     const fetchData = async () => {
       const boards = await getBoards();
@@ -110,7 +36,7 @@ const BoardSection = () => {
               poppins.className
             )}
           >
-            Vorstand
+            {t("club.board.title")}
           </h2>
           <div className={montserrat.className}>
             <p className="text-white py-8 text-sm sm:text-base">

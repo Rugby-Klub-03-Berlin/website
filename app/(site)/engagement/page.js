@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function Engagement() {
-  const t = useTranslation();
+  const { t } = useTranslation();
 
   const engagements = [
     {

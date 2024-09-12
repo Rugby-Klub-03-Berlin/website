@@ -7,10 +7,12 @@ import dayjs from "dayjs";
 import { Divider } from "antd";
 import { urlFor } from "@/sanity/urlFor";
 import { CalendarDays, Dumbbell, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Newbies = () => {
   const [selectedCard, setSelectedCard] = useState(null);
   const [newbies, setNewbies] = useState([{}]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.getElementById("newbies").onmousemove = (e) => {
@@ -79,7 +81,7 @@ const Newbies = () => {
     <>
       <Divider />
       <div className="text-2xl pb-4">
-        <h1 className={space.className}>Nachwuchs</h1>
+        <h1 className={space.className}>{t("teams.youth.title")}</h1>
       </div>
       <div
         id="newbies"

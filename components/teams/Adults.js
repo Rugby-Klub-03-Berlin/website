@@ -7,10 +7,12 @@ import dayjs from "dayjs";
 import { Divider } from "antd";
 import { urlFor } from "@/sanity/urlFor";
 import { CalendarDays, Dumbbell, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Adults = () => {
   const [selectedCard, setSelectedCard] = useState(null);
   const [adults, setAdults] = useState([{}]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.getElementById("adults").onmousemove = (e) => {
@@ -77,7 +79,7 @@ const Adults = () => {
     <div className={montserrat.className}>
       <Divider />
       <div className="text-2xl pb-4">
-        <h1 className={space.className}>Erwachsene</h1>
+        <h1 className={space.className}>{t("teams.adults.title")}</h1>
       </div>
       <div
         id="adults"

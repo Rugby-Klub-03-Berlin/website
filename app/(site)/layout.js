@@ -5,11 +5,6 @@ import Navbar from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import TranslationsProvider from "@/components/provider/translations-provider";
-import { locales } from "@/i18n";
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
 
 export const metadata = {
   title: "Rugby Klub 03 Berlin",

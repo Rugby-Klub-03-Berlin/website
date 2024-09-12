@@ -3,10 +3,12 @@ import { Carousel } from "antd";
 import { montserrat, space } from "@/public/fonts/fonts";
 import React, { useState, createRef } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function AboutSection() {
   const carouselRef = createRef();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const { t } = useTranslation();
 
   const onChange = (currentSlide, nextSlide) => {
     setCurrentSlide(nextSlide);
@@ -20,26 +22,20 @@ export default function AboutSection() {
     {
       id: 0,
       image: "/images/Männer.jpg",
-      text_1:
-        "Wir sind Berlins größter Rugby-Verein, beheimatet in Weißensee. Wir lieben und leben Rugby, auf und neben dem Platz.",
-      text_2:
-        "Wir bieten Vollkontakt und Touch-Rugby, 15er- und 7er-Rugby. Mit unserer 1. Herrenmannschaft sind wir sogar in der 1. Bundesliga vertreten.",
+      text_1: t("home.explore.first.bottom"),
+      text_2: t("home.explore.first.top"),
     },
     {
       id: 1,
       image: "/images/Jugend.jpeg",
-      text_1:
-        "Bei uns gibt es Training für alle ab 2 1/2 Jahren. Angeleitet von unseren Übungsleiter:innen trainieren die Altersklassen regelmäßig bei uns in der Buschallee.",
-      text_2:
-        "Interessiert an einem Schnuppertraining? Meldet euch bei jugend@rugbyklub03.berlin",
+      text_1: t("home.explore.second.bottom"),
+      text_2: t("home.explore.second.top"),
     },
     {
       id: 2,
       image: "/images/Frauen.jpg",
-      text_1:
-        "Die RK-Frauen spielen erfolgreich 7er-Rugby und nehmen mit der SG Berlin auch am Ligabetrieb im 15er-Rugby teil.",
-      text_2:
-        "Vollkontakt ist nicht so dein Ding? Dann schau doch dienstags mal bei unseren Touch Rugby Frauen vorbei!",
+      text_1: t("home.explore.third.bottom"),
+      text_2: t("home.explore.third.top"),
     },
   ];
 
@@ -53,7 +49,10 @@ export default function AboutSection() {
           <div className="absolute bottom-0 hidden md:flex h-3/12 w-[30%] left-[5%] border-neutral-950 border-4 border-t-0 text-gray-300 justify-left items-center">
             <h1 className={space.className}>
               <div className="font-normal text-5xl">
-                Erkunde den <div className="textDominantcolor">Verein</div>
+                {t("home.explore.title")}
+                <div className="textDominantcolor">
+                  {t("home.explore.markedTitle")}
+                </div>
               </div>
             </h1>
           </div>
@@ -237,7 +236,10 @@ export default function AboutSection() {
           <div className="w-2/3 text-gray-300 pb-5">
             <h1 className={space.className}>
               <div className="font-normal text-3xl">
-                Erkunde den <div className="textDominantcolor">Verein</div>
+                {t("home.explore.title")}
+                <div className="textDominantcolor">
+                  {t("home.explore.markedTitle")}
+                </div>
               </div>
             </h1>
           </div>

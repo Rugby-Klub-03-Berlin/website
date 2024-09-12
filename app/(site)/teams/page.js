@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 export default function Teams() {
-  const t = useTranslation();
+  const { t } = useTranslation();
   return (
     <AnimatePresence mode="wait">
       <motion.div
