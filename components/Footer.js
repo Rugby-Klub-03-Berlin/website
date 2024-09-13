@@ -29,7 +29,7 @@ const FooterBottom = () => {
           </Link>
           <div className="flex-row pt-2 lg:pt-0 flex lg:space-x-5 text-gray-500 text-sm">
             <Link href="/club" className="pr-2 hover:underline">
-              Über uns
+              {t("club.aboutUs.title")}
             </Link>
             <Link
               href="/admin"
@@ -39,10 +39,10 @@ const FooterBottom = () => {
               Admin
             </Link>
             <Link href="/privacy" className="px-2 hover:underline">
-              Datenschutz
+              {t("privacy.title")}
             </Link>
             <Link href="/club#impressum" className="px-2 hover:underline">
-              Impressum
+              {t("navbar.club.imprint")}
             </Link>
           </div>
         </div>
