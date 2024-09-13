@@ -178,14 +178,17 @@ export default function Engagement() {
               <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-neutral-950"></div>
               <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-neutral-950"></div>
             </div>
-            <div className="border border-neutral-800 p-1.5 pl-5 mt-20 mb-10 rounded-full">
-              <div className="flex items-center gap-x-3 justify-between">
+            <div className="text-xs sm:text-sm text-neutral-500">
+              {t("volunteer.sponsoring.contribute")}
+            </div>
+            <div className="border border-neutral-800 sm:p-1.5 sm:pl-5 mt-20 mb-10 rounded-xl sm:rounded-full">
+              <div className="flex flex-col sm:flex-row items-center gap-x-3 sm:gap-y-0 gap-y-3 p-3 sm:p-0 sm:justify-between">
                 <span className="text-xs sm:text-sm text-neutral-500">
                   {t("volunteer.sponsoring.contribute")}
                 </span>
                 <button
                   onClick={sendMail}
-                  className="inline-flex justify-center items-center gap-x-2 text-center bg-neutral-900 border border-neutral-800 hover:border-neutral-900 text-xs sm:text-sm textDominantcolor hover:text-yellow-500 font-medium rounded-full focus:outline-none transition py-2 pl-4 pr-3 duration-300"
+                  className="flex w-full sm:w-fit justify-center items-center gap-x-2 text-center bg-neutral-900 border border-neutral-800 hover:border-neutral-900 text-xs sm:text-sm textDominantcolor hover:text-yellow-500 font-medium rounded-full focus:outline-none transition py-2 pl-4 pr-3 duration-300"
                 >
                   Kontaktieren
                   <svg
