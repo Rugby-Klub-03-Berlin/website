@@ -185,7 +185,7 @@ export default function Engagement() {
                   onClick={sendMail}
                   className="flex w-full sm:w-fit justify-center items-center gap-x-2 text-center bg-neutral-900 border border-neutral-800 hover:border-neutral-900 text-xs sm:text-sm textDominantcolor hover:text-yellow-500 font-medium rounded-full focus:outline-none transition py-2 pl-4 pr-3 duration-300"
                 >
-                  Kontaktieren
+                  {t("navbar.contact")}
                   <svg
                     className="w-2.5 h-2.5"
                     width="16"

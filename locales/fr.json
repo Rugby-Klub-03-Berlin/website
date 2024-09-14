@@ -8,7 +8,14 @@
     "continueRead": "Lire la suite",
     "lastPosts": "Derniers messages",
     "report": "Rapport du match",
-    "viewMore": "Voir plus"
+    "viewMore": "Voir plus",
+    "all": "Tout afficher",
+    "reports": "Rapports de match",
+    "posts": "Messages",
+    "loading": "Chargement ...",
+    "read": "Lire",
+    "searchNews": "Rechercher des actualités...",
+    "post": "Post"
   },
   "navbar": {
     "club": {

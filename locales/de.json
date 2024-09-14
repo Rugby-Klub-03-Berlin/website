@@ -8,7 +8,14 @@
     "continueRead": "Weiter lesen",
     "lastPosts": "Letzten Beiträge",
     "report": "Spielbericht",
-    "viewMore": "Mehr ansehen"
+    "viewMore": "Mehr ansehen",
+    "all": "Alles",
+    "reports": "Spielberichte",
+    "posts": "Berichte",
+    "loading": "Lädt ...",
+    "read": "Lesen",
+    "searchNews": "Suche nach News ...",
+    "post": "Beitrag"
   },
   "navbar": {
     "club": {
