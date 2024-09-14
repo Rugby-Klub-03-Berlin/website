@@ -40,21 +40,20 @@ const BoardSection = () => {
           </h2>
           <div className={montserrat.className}>
             <p className="text-white py-8 text-sm sm:text-base">
-              Hier findest du den bei der JHV 2023 gewählten Vorstand des Rugby
-              Klub 03 Berlin e.V. sowie die dazugehörigen Kontaktdaten:
+              {t("club.board.description")}
             </p>
           </div>
           <div className="w-fit justify-center pb-3">
             <div className="border border-neutral-800 p-1.5 pl-5 rounded-full">
               <div className="flex items-center gap-x-3">
                 <span className="text-xs sm:text-sm text-neutral-500">
-                  Du möchtest mehr für den Verein tun?
+                  {t("club.board.doMore")}
                 </span>
                 <Link
                   className="inline-flex justify-center items-center gap-x-2 text-center bg-neutral-900 border border-neutral-800 hover:border-neutral-900 text-xs sm:text-sm textDominantcolor hover:text-yellow-500 font-medium rounded-full focus:outline-none transition py-2 px-4 duration-300"
                   href="/engagement"
                 >
-                  Mehr Erfahren
+                  {t("club.board.findOutMore")}
                   <svg
                     className="w-2.5 h-2.5"
                     width="16"

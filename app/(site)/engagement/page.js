@@ -1,11 +1,9 @@
 "use client";
 import Marquee from "@/components/ui/marquee";
-import { cn } from "@/lib/utils";
 import { poppins, space } from "@/public/fonts/fonts";
 import classNames from "classnames";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 

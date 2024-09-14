@@ -2,7 +2,13 @@
   "common": {
     "club": "Rugby Klub 03 Berlin",
     "createdBy": "Created by Martin Behrmann",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "new": "New",
+    "newestPosts": "Newest club updates",
+    "continueRead": "Read more",
+    "lastPosts": "Current updates",
+    "report": "Match report",
+    "viewMore": "View more"
   },
   "navbar": {
     "club": {
@@ -47,7 +53,10 @@
       "fourthParagraph": "Almost half of RK03 club members are minors and play in the numerous age groups of the youth section. The first rugby experience can be gained from the age of 3 ½ in the U6. The youth are accompanied by qualified and committed coaches who encourage and challenge them in an age-appropriate manner."
     },
     "board": {
-      "title": "Board"
+      "title": "Board",
+      "description": "Here you can meet the current board members, elected at the annual club meeting in 2023, as well as their e-mail contacts:",
+      "doMore": "You want to do more for our club?",
+      "findOutMore": "Find out more"
     },
     "stadium": {
       "title": "Buschallee Stadium",
@@ -112,7 +121,8 @@
     }
   },
   "dates": {
-    "title": "Dates"
+    "title": "Dates",
+    "upcomingEvents": "Upcoming events"
   },
   "documents": {
     "title": "Documents",
@@ -162,6 +172,6 @@
     }
   },
   "privacy": {
-    "title": "Datenschutz"
+    "title": "Data protection"
   }
 }

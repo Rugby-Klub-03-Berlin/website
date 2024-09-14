@@ -2,7 +2,13 @@
   "common": {
     "club": "Rugby Klub 03 Berlin",
     "createdBy": "Créé par Martin Behrmann",
-    "readMore": "Lire plus"
+    "readMore": "Lire la suite",
+    "new": "Nouveau",
+    "newestPosts": "Dernier post sur l'association",
+    "continueRead": "Lire la suite",
+    "lastPosts": "Derniers messages",
+    "report": "Rapport du match",
+    "viewMore": "Voir plus"
   },
   "navbar": {
     "club": {
@@ -47,7 +53,10 @@
       "fourthParagraph": "Presque la moitié de tous les membres sont mineurs et jouent dans les différentes catégories d'âge de la section jeunesse. Les premières expériences de rugby peuvent être acquises dès l'âge de 3 ans et demi dans la catégorie U6. Les enfants et les jeunes sont accompagnés par des instructeurs qualifiés et dévoués, qui les encouragent et les défient de manière appropriée."
     },
     "board": {
-      "title": "Le conseil d'administration"
+      "title": "Le conseil d'administration",
+      "description": "Tu trouveras ici le conseil d’administration du Rugby Klub 03 Berlin e.V. élu en 2023 ainsi que les coordonnées correspondantes:",
+      "doMore": "Tu veux faire plus pour l'association?",
+      "findOutMore": "En savoir plus"
     },
     "stadium": {
       "title": "Stade Buschallee",
@@ -112,7 +121,8 @@
     }
   },
   "dates": {
-    "title": "Rendez-vous"
+    "title": "Dates",
+    "upcomingEvents": "Prochaines dates"
   },
   "documents": {
     "title": "Documents",
@@ -162,6 +172,6 @@
     }
   },
   "privacy": {
-    "title": "Datenschutz"
+    "title": "Protection des données"
   }
 }

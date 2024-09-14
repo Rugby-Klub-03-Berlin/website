@@ -2,7 +2,13 @@
   "common": {
     "club": "Rugby Klub 03 Berlin",
     "createdBy": "Erstellt von Martin Behrmann",
-    "readMore": "Mehr lesen"
+    "readMore": "Mehr lesen",
+    "new": "Neu",
+    "newestPosts": "Neuester Post zum Verein",
+    "continueRead": "Weiter lesen",
+    "lastPosts": "Letzten Beiträge",
+    "report": "Spielbericht",
+    "viewMore": "Mehr ansehen"
   },
   "navbar": {
     "club": {
@@ -47,7 +53,10 @@
       "fourthParagraph": "Fast die Hälfte aller Mitglieder ist minderjährig und spielt in den diversen Altersklassen der Jugendabteilung. Erste Rugby-Erfahrungen können schon mit 3 ½ Jahren in der U6 gewonnen werden. Begleitet werden die Kinder und Jugendlichen von qualifizierten und engagierten Übungsleiter:innen, die sie altersgerecht fördern und fordern."
     },
     "board": {
-      "title": "Vorstand"
+      "title": "Vorstand",
+      "description": "Hier findest du den bei der JHV 2023 gewählten Vorstand des Rugby Klub 03 Berlin e.V. sowie die dazugehörigen Kontaktdaten:",
+      "doMore": "Du möchtest mehr für den Verein tun?",
+      "findOutMore": "Mehr erfahren"
     },
     "stadium": {
       "title": "Stadion Buschallee",
@@ -112,7 +121,8 @@
     }
   },
   "dates": {
-    "title": "Termine"
+    "title": "Termine",
+    "upcomingEvents": "Kommende Termine"
   },
   "documents": {
     "title": "Dokumente",

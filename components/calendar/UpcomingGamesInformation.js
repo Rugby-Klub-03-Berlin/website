@@ -5,11 +5,13 @@ import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 import { getEvents } from "@/sanity/sanity-utils";
 import { useGlobalContext } from "@/app/context/GlobalContext";
+import { useTranslation } from "react-i18next";
 
 export default function UpcomingGamesInformation() {
   const [events, setEvents] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const { setSelectedEvent } = useGlobalContext();
+  const { t } = useTranslation();
 
   const closestDates = findClosestDates();
   useEffect(() => {
@@ -114,7 +116,7 @@ export default function UpcomingGamesInformation() {
       </div>
       <div className="pt-10 pb-4">
         <div className="py-4 pb-6 text-2xl text-white">
-          <h1 className={space.className}>Kommende Termine</h1>
+          <h1 className={space.className}>{t("dates.upcomingEvents")}</h1>
         </div>
 
         <Timeline horizontal className="hidden sm:flex pl-1 my-8">

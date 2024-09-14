@@ -2,8 +2,10 @@
 import { poppins } from "@/public/fonts/fonts";
 import { motion, AnimatePresence } from "framer-motion";
 import classNames from "classnames";
+import { useTranslation } from "react-i18next";
 
 export default function Privacy() {
+  const { t } = useTranslation();
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -26,7 +28,7 @@ export default function Privacy() {
                   poppins.className
                 )}
               >
-                Datenschutz
+                {t("privacy.title")}
               </div>
               <div className="text-neutral-300 text-base">
                 <br />
