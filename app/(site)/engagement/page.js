@@ -5,10 +5,8 @@ import classNames from "classnames";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect } from "react";
-// import { useTranslation } from "react-i18next";
 
 export default function Engagement() {
-  // const { t } = useTranslation();
   // const engagements = [
   //   {
   //     title: t("volunteer.workingGroups.gathering.title"),
