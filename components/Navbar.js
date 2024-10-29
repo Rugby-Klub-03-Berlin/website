@@ -474,7 +474,9 @@ const Navbar = () => {
                 <Box
                   delay={0.7}
                   title={"Shop"}
-                  Href={"https://rugby-fanshop.de"}
+                  Href={
+                    "https://canterbury.nl/en/club-shops/germany/rk03-berlin"
+                  }
                   icon={true}
                   target={"_blank"}
                 />
