@@ -46,7 +46,6 @@ export default function Engagement() {
   const sponsoringImages = [
     "/images/sponsoring/Biltong.png",
     "/images/sponsoring/CB.png",
-    "/images/sponsoring/Elch.png",
     "/images/sponsoring/Kortas.png",
     "/images/sponsoring/Oranke-Bodenleger.png",
     "/images/sponsoring/Rewe-Daniel-Kühn.png",
