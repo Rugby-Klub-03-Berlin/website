@@ -5,10 +5,10 @@ import classNames from "classnames";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function Engagement() {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   const engagements = [
     {

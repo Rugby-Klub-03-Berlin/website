@@ -4,10 +4,10 @@ import { poppins, space } from "@/public/fonts/fonts";
 import { ConfigProvider, theme } from "antd";
 import classNames from "classnames";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function Teams() {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <AnimatePresence mode="wait">
       <motion.div

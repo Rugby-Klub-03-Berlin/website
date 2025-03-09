@@ -5,13 +5,13 @@ import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 import { getEvents } from "@/sanity/sanity-utils";
 import { useGlobalContext } from "@/app/context/GlobalContext";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function UpcomingGamesInformation() {
   const [events, setEvents] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const { setSelectedEvent } = useGlobalContext();
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   const closestDates = findClosestDates();
   useEffect(() => {

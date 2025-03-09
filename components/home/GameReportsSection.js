@@ -1,14 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { montserrat } from "@/public/fonts/fonts";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { motion, useAnimation } from "framer-motion";
 import { getGamereports } from "@/sanity/sanity-utils";
 import dayjs from "dayjs";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const Box = ({ report }) => {
-  const { t } = useTranslation();
+  const t = useTranslations();
   const imageVariant = {
     visible: {
       scale: 1.1,
@@ -69,7 +69,7 @@ const Box = ({ report }) => {
 
 export default function GameReportsSection() {
   const [gamereports, setGameReports] = useState([{}]);
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   const control = useAnimation();
 

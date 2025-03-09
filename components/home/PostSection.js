@@ -1,12 +1,12 @@
 "use client";
 import { montserrat, space } from "@/public/fonts/fonts";
 import { getBlogs } from "@/sanity/sanity-utils";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const Box = ({ blog }) => {
   const boxVariant = {
@@ -73,7 +73,7 @@ const Box = ({ blog }) => {
 
 export default function PostSection() {
   const [blogs, setBlogs] = useState([{}]);
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   const boxVariant = {
     visible: {

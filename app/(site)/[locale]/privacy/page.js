@@ -2,10 +2,10 @@
 import { poppins } from "@/public/fonts/fonts";
 import { motion, AnimatePresence } from "framer-motion";
 import classNames from "classnames";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function Privacy() {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <AnimatePresence mode="wait">
       <motion.div

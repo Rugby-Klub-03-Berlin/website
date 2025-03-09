@@ -1,12 +1,12 @@
 "use client";
 import { space } from "@/public/fonts/fonts";
 import { getBlogs, getGamereports } from "@/sanity/sanity-utils";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useState, useEffect } from "react";
 import dayjs from "dayjs";
 import { Search } from "lucide-react";
 import classNames from "classnames";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function News() {
   const [blogs, setBlogs] = useState([]);
@@ -14,7 +14,7 @@ export default function News() {
   const [allNews, setAllNews] = useState([]);
   const [isSearch, setIsSearch] = useState(false);
   const [searchText, setSearchText] = useState("");
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -247,7 +247,7 @@ export default function News() {
 }
 
 const NewsCard = ({ news }) => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <Link

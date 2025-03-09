@@ -1,13 +1,13 @@
 "use client";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import React, { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname } from "@/i18n/navigation";
 import { space } from "@/public/fonts/fonts";
 import { motion, AnimatePresence } from "framer-motion";
 import classNames from "classnames";
 import { ExternalLink, X } from "lucide-react";
-import { useTranslation } from "react-i18next";
-import { LanguageToggle } from "@/components/ui/language-toggle";
+import { useTranslations } from "next-intl";
+import { LanguageToggle } from "./ui/language-toggle";
 
 const Box = ({ delay, title, Href, icon, target }) => {
   const [scroll, setScroll] = useState(false);
@@ -74,8 +74,7 @@ const Navbar = () => {
   const [logoColor, setLogoColor] = useState("white");
   const [glow, setGlow] = useState(false);
   const pathname = usePathname();
-  const { t, i18n } = useTranslation();
-  const locale = i18n.language;
+  const t = useTranslations();
 
   const [hamburgerMenuIsOpen, setHambugerMenuIsOpen] = useState(false);
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
@@ -164,7 +163,7 @@ const Navbar = () => {
         >
           <div className="flex-row flex items-center justify-between pl-2 px-4">
             <Link
-              href="./#"
+              href="/#"
               className="flex-row flex justify-center items-center align-center "
               style={{ textAlign: "center" }}
               onClick={() => {

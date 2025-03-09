@@ -11,11 +11,11 @@ import {
 } from "lucide-react";
 import classNames from "classnames";
 import { getDocuments } from "@/sanity/sanity-utils";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function Dokumente() {
   const [documents, setDocuments] = useState([]);
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   useEffect(() => {
     document.getElementById("documents").onmousemove = (e) => {

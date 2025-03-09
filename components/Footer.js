@@ -2,13 +2,13 @@
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import classNames from "classnames";
 import { poppins } from "@/public/fonts/fonts";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const FooterBottom = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <footer className="bg-neutral-950 absolute bottom-0 text-center z-[5]">
       <div className="relative text-center w-screen p-2 py-6 lg:py-8 ">

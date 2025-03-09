@@ -3,12 +3,12 @@ import { Carousel } from "antd";
 import { montserrat, space } from "@/public/fonts/fonts";
 import React, { useState, createRef } from "react";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function AboutSection() {
   const carouselRef = createRef();
   const [currentSlide, setCurrentSlide] = useState(0);
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   const onChange = (currentSlide, nextSlide) => {
     setCurrentSlide(nextSlide);

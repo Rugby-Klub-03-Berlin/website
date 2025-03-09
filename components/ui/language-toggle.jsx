@@ -7,27 +7,35 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { locales, localeNames } from "@/i18n";
-import { useTranslation } from "react-i18next";
+import { localeNames } from "@/i18n/request";
+import { useLocale } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { useParams } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 export function LanguageToggle() {
-  const { t, i18n } = useTranslation();
+  const locale = useLocale();
+  const router = useRouter();
+  const [isPending, startTransition] = React.useTransition();
+  const pathname = usePathname();
+  const params = useParams();
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
-
+  function onSelectChange(locale) {
+    startTransition(() => {
+      router.replace({ pathname, params }, { locale: locale });
+    });
+  }
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <div className="h-[1.2rem] w-[1.2rem] cursor-pointer">
-          {localeNames[i18n.language].flag}
+          {localeNames[locale].flag}
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        {locales.map((locale) => (
+        {routing.locales.map((locale) => (
           <DropdownMenuItem
-            onClick={() => changeLanguage(locale)}
+            onClick={() => onSelectChange(locale)}
             className="gap-x-2"
           >
             <div>{localeNames[locale].flag}</div>

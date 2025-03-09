@@ -1,6 +1,6 @@
 "use client";
 
-import { I18nextProvider } from "react-i18next";
+import { I18nextProvider } from "next-intl";
 import i18n from "@/i18n";
 
 export default function TranslationsProvider({ children }) {

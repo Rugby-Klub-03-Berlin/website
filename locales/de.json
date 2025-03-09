@@ -15,7 +15,18 @@
     "loading": "Lädt ...",
     "read": "Lesen",
     "searchNews": "Suche nach News ...",
-    "post": "Beitrag"
+    "post": "Beitrag",
+    "weekday": "Wochentag",
+    "time": "Zeit",
+    "days": {
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag"
+    }
   },
   "navbar": {
     "club": {
@@ -125,7 +136,13 @@
     "youth": {
       "title": "Nachwuchsbereich",
       "email": "jugend@rugbyklub03.berlin"
-    }
+    },
+    "training": "Training / Spielpläne",
+    "gameplan": "Spielplan",
+    "practice": "Training",
+    "gameplanlink": "Diese können unter diesem Link gefunden werden ",
+    "nogameplan": "Noch kein Spielplan",
+    "notrainer": "Noch keine Trainer"
   },
   "dates": {
     "title": "Termine",
@@ -180,5 +197,8 @@
   },
   "privacy": {
     "title": "Datenschutz"
+  },
+  "team": {
+    "trainer": "Trainer:innen"
   }
 }

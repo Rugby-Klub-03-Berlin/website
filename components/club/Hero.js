@@ -1,10 +1,10 @@
 import { montserrat, poppins } from "@/public/fonts/fonts";
 import classNames from "classnames";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 import React from "react";
 const Hero = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <section id="about" className=" text-white py-28 sm:pt-36">

@@ -15,7 +15,18 @@
     "loading": "Loading ...",
     "read": "Read",
     "searchNews": "Search for news ...",
-    "post": "Post"
+    "post": "Post",
+    "weekday": "Weekday",
+    "time": "Time",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    }
   },
   "navbar": {
     "club": {
@@ -125,7 +136,13 @@
     "youth": {
       "title": "Kids & Youth",
       "email": "jugend@rugbyklub03.berlin"
-    }
+    },
+    "training": "Training / Match Schedule",
+    "gameplan": "Match Schedule",
+    "practice": "Practice",
+    "gameplanlink": "These can be found under this link ",
+    "nogameplan": "No game schedule yet",
+    "notrainer": "No trainers yet"
   },
   "dates": {
     "title": "Dates",
@@ -180,5 +197,8 @@
   },
   "privacy": {
     "title": "Data protection"
+  },
+  "team": {
+    "trainer": "Trainer"
   }
 }

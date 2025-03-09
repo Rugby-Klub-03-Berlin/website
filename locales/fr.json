@@ -15,7 +15,18 @@
     "loading": "Chargement ...",
     "read": "Lire",
     "searchNews": "Rechercher des actualités...",
-    "post": "Post"
+    "post": "Post",
+    "weekday": "Jour de la semaine",
+    "time": "Temps",
+    "days": {
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche"
+    }
   },
   "navbar": {
     "club": {
@@ -125,7 +136,13 @@
     "youth": {
       "title": "Enfants",
       "email": "jugend@rugbyklub03.berlin"
-    }
+    },
+    "training": "Entraînement / Plans de jeu",
+    "gameplan": "Plan de jeu",
+    "practice": "Entraînement",
+    "gameplanlink": "Vous pouvez les trouver en cliquant sur ce lien ",
+    "nogameplan": "Pas encore de plan de jeu",
+    "notrainer": "Pas d'entraîneur pour le moment"
   },
   "dates": {
     "title": "Dates",
@@ -180,5 +197,8 @@
   },
   "privacy": {
     "title": "Protection des données"
+  },
+  "team": {
+    "trainer": "Entraîneur"
   }
 }

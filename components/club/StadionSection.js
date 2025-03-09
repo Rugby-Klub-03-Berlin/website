@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import trainingPicture from "public/images/club/stadion/training.jpg";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const StadionSection = () => {
   const [ref, inView] = useInView();
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   useEffect(() => {
     if (inView) {

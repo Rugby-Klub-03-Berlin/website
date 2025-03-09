@@ -1,10 +1,10 @@
 import { montserrat, poppins } from "@/public/fonts/fonts";
 import classNames from "classnames";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 const ImpressumSection = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <section

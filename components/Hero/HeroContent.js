@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { space } from "@/public/fonts/fonts";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { TitleComponent } from "./TitleComponent";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const draw = {
   hidden: { pathLength: 0 },
@@ -19,7 +19,7 @@ const draw = {
 
 export const HeroContent = () => {
   const [scroll, setScroll] = useState(false);
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   useEffect(() => {
     const changeColor = () => {

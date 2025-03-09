@@ -4,14 +4,14 @@ import Avatars from "./Avatars";
 import { montserrat, poppins } from "@/public/fonts/fonts";
 import { Divider } from "antd";
 import { useGlobalContext } from "@/app/context/GlobalContext";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import classNames from "classnames";
 import { getBoards } from "@/sanity/sanity-utils";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const BoardSection = () => {
   const [avatars, setAvatars] = useState([{}]);
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   useEffect(() => {
     const fetchData = async () => {

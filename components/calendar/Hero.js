@@ -2,10 +2,10 @@
 import { Divider } from "antd";
 import { space } from "@/public/fonts/fonts";
 import classNames from "classnames";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-between items-left md:items-center">
