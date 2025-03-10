@@ -1,12 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { montserrat } from "@/public/fonts/fonts";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { motion, useAnimation } from "framer-motion";
 import { getGamereports } from "@/sanity/sanity-utils";
 import dayjs from "dayjs";
+import { useTranslations } from "next-intl";
 
 const Box = ({ report }) => {
+  const t = useTranslations();
   const imageVariant = {
     visible: {
       scale: 1.1,
@@ -49,7 +51,7 @@ const Box = ({ report }) => {
           <div className="space-y-2 basis-2/3 m-auto">
             <div className="flex flex-row text-xs">
               <div className="pr-4 text-dominantColor uppercase">
-                <p className={montserrat.className}>Spielbericht</p>
+                <p className={montserrat.className}>{t("common.report")}</p>
               </div>
               <div className="border-l-2 border-neutral-500 pl-4 text-neutral-500 w-max">
                 {report.publishedAt}
@@ -67,6 +69,7 @@ const Box = ({ report }) => {
 
 export default function GameReportsSection() {
   const [gamereports, setGameReports] = useState([{}]);
+  const t = useTranslations();
 
   const control = useAnimation();
 
@@ -153,7 +156,9 @@ export default function GameReportsSection() {
                 >
                   <div className="flex flex-row text-xs">
                     <div className="pr-4 textDominantcolor uppercase">
-                      <p className={montserrat.className}>Spielbericht</p>
+                      <p className={montserrat.className}>
+                        {t("common.report")}
+                      </p>
                     </div>
                     <div className="border-l-2 border-neutral-500 pl-4 text-neutral-500">
                       {gamereports[0].publishedAt}
@@ -182,7 +187,7 @@ export default function GameReportsSection() {
             className="relative inline-flex items-center justify-center py-3 pl-4 pr-4 font-light hover:shadow-sm-light hover:shadow-white/20 text-white transition duration-300 bg-neutral-900 hover:bg-neutral-800 "
           >
             <span className="relative w-full">
-              <p className={montserrat.className}>Mehr Ansehen</p>
+              <p className={montserrat.className}>{t("common.viewMore")}</p>
             </span>
           </Link>
         </div>

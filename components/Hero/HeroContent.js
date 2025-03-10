@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { space } from "@/public/fonts/fonts";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { TitleComponent } from "./TitleComponent";
+import { useTranslations } from "next-intl";
 
 const draw = {
   hidden: { pathLength: 0 },
@@ -18,6 +19,7 @@ const draw = {
 
 export const HeroContent = () => {
   const [scroll, setScroll] = useState(false);
+  const t = useTranslations();
 
   useEffect(() => {
     const changeColor = () => {
@@ -106,7 +108,7 @@ export const HeroContent = () => {
                 </svg>
               </span>
               <span className="relative">
-                <p className={space.className}>Mitglied werden</p>
+                <p className={space.className}>{t("home.becomeMember")}</p>
               </span>
             </Link>
           </motion.div>
