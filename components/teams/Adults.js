@@ -19,6 +19,8 @@ const Adults = () => {
           x = e.clientX - rect.left,
           y = e.clientY - rect.top;
 
+        const width = card.offsetWidth;
+
         card.style.setProperty("--mouse-x", `${x}px`);
         card.style.setProperty("--mouse-y", `${y}px`);
       }
