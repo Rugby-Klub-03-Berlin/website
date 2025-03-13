@@ -1,12 +1,11 @@
 "use client";
 import { space } from "@/public/fonts/fonts";
 import { getBlogs, getGamereports } from "@/sanity/sanity-utils";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import dayjs from "dayjs";
 import { Search } from "lucide-react";
 import classNames from "classnames";
-import { useTranslations } from "next-intl";
 
 export default function News() {
   const [blogs, setBlogs] = useState([]);
@@ -14,7 +13,6 @@ export default function News() {
   const [allNews, setAllNews] = useState([]);
   const [isSearch, setIsSearch] = useState(false);
   const [searchText, setSearchText] = useState("");
-  const t = useTranslations();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -104,7 +102,7 @@ export default function News() {
                 aria-controls="tab1"
                 role="tab"
               >
-                {t("common.all")}
+                Alles
               </button>
               <button
                 type="button"
@@ -114,7 +112,7 @@ export default function News() {
                 aria-controls="tab2"
                 role="tab"
               >
-                {t("common.posts")}
+                Beiträge
               </button>
               <button
                 type="button"
@@ -124,7 +122,7 @@ export default function News() {
                 aria-controls="tab3"
                 role="tab"
               >
-                {t("common.reports")}
+                Spielberichte
               </button>
             </div>
           </nav>
@@ -134,7 +132,7 @@ export default function News() {
               !isSearch && "lg:hidden"
             )}
             type="text"
-            placeholder={t("common.searchNews")}
+            placeholder="Suche nach News ..."
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
@@ -162,7 +160,7 @@ export default function News() {
             aria-controls="tab1"
             role="tab"
           >
-            {t("common.all")}
+            Alles
           </button>
           <button
             type="button"
@@ -172,7 +170,7 @@ export default function News() {
             aria-controls="tab2"
             role="tab"
           >
-            {t("common.posts")}
+            Beiträge
           </button>
           <button
             type="button"
@@ -182,7 +180,7 @@ export default function News() {
             aria-controls="tab3"
             role="tab"
           >
-            {t("common.reports")}
+            Spielberichte
           </button>
         </nav>
 
@@ -205,7 +203,7 @@ export default function News() {
                 ))}
               </div>
             ) : (
-              <div className="text-white">{t("common.loading")}</div>
+              <div className="text-white">Loading</div>
             )}
           </div>
           <div
@@ -221,7 +219,7 @@ export default function News() {
                 ))}
               </div>
             ) : (
-              <div className="text-white">{t("common.loading")}</div>
+              <div className="text-white">Loading</div>
             )}
           </div>
           <div
@@ -237,7 +235,7 @@ export default function News() {
                 ))}
               </div>
             ) : (
-              <div className="text-white">{t("common.loading")}</div>
+              <div className="text-white">Loading</div>
             )}
           </div>
         </div>
@@ -247,8 +245,6 @@ export default function News() {
 }
 
 const NewsCard = ({ news }) => {
-  const t = useTranslations();
-
   return (
     <Link
       className="group flex flex-col overflow-hidden hover:bg-neutral-800 rounded duration-300 p-2"
@@ -267,7 +263,7 @@ const NewsCard = ({ news }) => {
             {news.publishedAt}
           </div>
           <div className=" bg-neutral-900 bg-opacity-60 py-1 px-1.5 rounded text-dominantColor group-hover:bg-neutral-700 group-hover:bg-opacity-70 transition duration-200">
-            {news.type == "report" ? t("common.report") : t("common.post")}
+            {news.type == "report" ? "Spielbericht" : "Beitrag"}
           </div>
         </div>
       </div>
@@ -283,7 +279,7 @@ const NewsCard = ({ news }) => {
         </div>
 
         <div className="mt-4 flex w-fit items-center gap-x-1.5 text-dominantColor decoration-2 hover:underline font-medium">
-          {t("common.read")}
+          Lesen
           <svg
             className="w-2.5 h-2.5"
             width="16"

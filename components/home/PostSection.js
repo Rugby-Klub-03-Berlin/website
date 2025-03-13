@@ -1,12 +1,11 @@
 "use client";
 import { montserrat, space } from "@/public/fonts/fonts";
 import { getBlogs } from "@/sanity/sanity-utils";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
-import { useTranslations } from "next-intl";
 
 const Box = ({ blog }) => {
   const boxVariant = {
@@ -73,8 +72,6 @@ const Box = ({ blog }) => {
 
 export default function PostSection() {
   const [blogs, setBlogs] = useState([{}]);
-  const t = useTranslations();
-
   const boxVariant = {
     visible: {
       x: -5,
@@ -168,7 +165,7 @@ export default function PostSection() {
                 >
                   <div className="relative top-1/2 transform -translate-y-1/2 flex justify-center">
                     <div>
-                      <p className={space.className}>{t("common.readMore")}</p>
+                      <p className={space.className}>Weiter lesen</p>
                     </div>
                     <motion.div
                       variants={boxVariant}
@@ -236,11 +233,9 @@ export default function PostSection() {
             <div className="h-[55%] justify-between flex flex-col bg-neutral-900 p-3 md:p-0 rounded-md md:bg-transparent">
               <div className="bg-neutral-900 w-fit mb-2 md:mb-0 p-1 pr-2 rounded-full text-xs flex flex-row items-center text-gray-400">
                 <div className="backgroundDominantColor w-fit p-1 px-2 rounded-full text-xs text-black mr-2">
-                  <p className={space.className}>{t("common.new")}</p>
+                  <p className={space.className}>Neu</p>
                 </div>
-                <p className={montserrat.className}>
-                  {t("common.newestPosts")}
-                </p>
+                <p className={montserrat.className}>Neuester Post zum Verein</p>
               </div>
 
               <div className={montserrat.className}>
@@ -257,9 +252,7 @@ export default function PostSection() {
                 </p>
                 <Link href={`/blogs/${blogs[0].slug}`} className="md:hidden">
                   <div className="bg-[rgb(35,35,35)] flex text-white text-center w-fit py-2 px-3 rounded">
-                    <p className={montserrat.className}>
-                      {t("common.continueRead")}
-                    </p>
+                    <p className={montserrat.className}>Weiter lesen</p>
                     <svg
                       className="w-6 h-6 ml-4"
                       fill="none"
@@ -283,7 +276,7 @@ export default function PostSection() {
             <div className="h-[55%] xl:w-[45%] flex flex-col text-gray-200 ">
               <div className="md:w-[50%]">
                 <div className="text-gray-500 uppercase md:text-sm text-base">
-                  <p className={space.className}>{t("common.lastPosts")}</p>
+                  <p className={space.className}>Letzten Beiträge</p>
                 </div>
               </div>
               <div className="w-full flex flex-col space-y-1">
@@ -295,7 +288,7 @@ export default function PostSection() {
               <div className="w-fit mt-4 mb-12">
                 <Link href="/newsroom" className={montserrat.className}>
                   <p className="text-sm hover:text-gray-400 uppercase hover:underline">
-                    {t("common.readMore")}
+                    Mehr lesen
                   </p>
                 </Link>
               </div>

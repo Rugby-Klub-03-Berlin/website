@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const headers = require("./headers");
-const createNextIntlPlugin = require("next-intl/plugin");
-
-const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {
   images: {
@@ -25,4 +22,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextIntl(nextConfig);
+module.exports = nextConfig;

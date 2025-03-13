@@ -1,26 +1,10 @@
-"use client";
-import React, { useEffect, useState } from "react";
 import { HeroContent } from "./HeroContent";
 
 const Hero = () => {
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => {
-    setOffsetY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
-
   return (
     <div className="h-screen text-center flex flex-col items-center justify-center bg-neutral-950">
       <div className="top-0 bottom-0 right-0 left-0 h-screen object-cover">
         <video
-          style={{
-            transform: `translateY(${offsetY * 0.4}px)`,
-          }}
           className="absolute top-0 bottom-0 right-0 left-0 w-screen h-screen object-cover"
           autoPlay
           loop

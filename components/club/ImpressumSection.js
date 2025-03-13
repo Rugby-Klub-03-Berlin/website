@@ -1,11 +1,8 @@
 import { montserrat, poppins } from "@/public/fonts/fonts";
 import classNames from "classnames";
-import { useTranslations } from "next-intl";
 import React from "react";
 
 const ImpressumSection = () => {
-  const t = useTranslations();
-
   return (
     <section
       id="impressum"
@@ -19,36 +16,35 @@ const ImpressumSection = () => {
               poppins.className
             )}
           >
-            {t("club.legal.title")}
+            Impressum
           </div>
           <div className="w-full">
-            <div className="font-bold">{t("club.legal.imprint.title")}</div>
-            {t("club.legal.imprint.address")}
+            <div className="font-bold">
+              Angaben gemäß § 5 TMG Rugby Klub 03 Berlin e.V.
+            </div>
+            Hansastraße 190,
+            <br /> 13088 Berlin
             <br />
-            <br />{" "}
-            <div className="font-semibold">
-              {t("club.legal.register.association.title")}
-            </div>{" "}
-            {t("club.legal.register.association.content")} <br />
-            <div className="font-semibold">
-              {t("club.legal.register.court.title")}
-            </div>{" "}
-            {t("club.legal.register.court.content")} <br /> <br />
-            <div className="font-semibold">
-              {t("club.legal.represented.title")}
-            </div>{" "}
-            {t("club.legal.represented.content")}
+            <br /> <div className="font-semibold">Vereinsregister:</div>{" "}
+            VR22787B <br />
+            <div className="font-semibold">Registergericht:</div> Amtsgericht
+            Berlin Charlottenburg <br /> <br />
+            <div className="font-semibold">Vertreten durch:</div> Vorstand
             <br />
             <br />
-            <div className="font-bold">{t("club.legal.contact.title")}</div>
-            {t("club.legal.contact.email")}
+            <div className="font-bold">Kontakt:</div>
+            E-Mail: info@rugbyklub03.berlin
             <br /> <br />
-            <div className="font-bold">{t("club.legal.tax.title")}</div>
-            {t("club.legal.tax.content")}
-            <br /> {t("club.legal.tax.id")}
+            <div className="font-bold">Umsatzsteuer-ID:</div>
+            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
+            <br /> 27/617/61962
             <br /> <br />
-            <div className="font-bold">{t("club.legal.consumer.title")}</div>
-            {t("club.legal.consumer.content")}
+            <div className="font-bold">
+              Verbraucherstreitbeilegung / Universalschlichtungsstelle:
+            </div>
+            Wir sind nicht bereit oder verpflichtet, an
+            Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+            teilzunehmen.
           </div>
         </div>
       </div>

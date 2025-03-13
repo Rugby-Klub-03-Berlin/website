@@ -1,5 +1,5 @@
 import { ArrowUturnLeftIcon } from "@heroicons/react/24/solid";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 
 function StudioNavbar(props) {
   return (

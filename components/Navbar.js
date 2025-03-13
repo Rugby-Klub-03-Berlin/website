@@ -1,13 +1,11 @@
 "use client";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { usePathname } from "@/i18n/navigation";
+import { usePathname } from "next/navigation";
 import { space } from "@/public/fonts/fonts";
 import { motion, AnimatePresence } from "framer-motion";
 import classNames from "classnames";
 import { ExternalLink, X } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { LanguageToggle } from "./ui/language-toggle";
 
 const Box = ({ delay, title, Href, icon, target }) => {
   const [scroll, setScroll] = useState(false);
@@ -74,8 +72,6 @@ const Navbar = () => {
   const [logoColor, setLogoColor] = useState("white");
   const [glow, setGlow] = useState(false);
   const pathname = usePathname();
-  const t = useTranslations();
-
   const [hamburgerMenuIsOpen, setHambugerMenuIsOpen] = useState(false);
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
 
@@ -163,7 +159,7 @@ const Navbar = () => {
         >
           <div className="flex-row flex items-center justify-between pl-2 px-4">
             <Link
-              href="/#"
+              href="./#"
               className="flex-row flex justify-center items-center align-center "
               style={{ textAlign: "center" }}
               onClick={() => {
@@ -255,9 +251,7 @@ const Navbar = () => {
                     damping: 15,
                     delay: 0.75,
                   }}
-                  className="flex items-center gap-x-3"
                 >
-                  <LanguageToggle />
                   <label
                     type="button"
                     className="relative group p-2 px-3 flex items-center gap-x-2 border border-dominantColor cursor-pointer text-dominantColor font-medium hover:text-black  duration-300 transition"
@@ -275,7 +269,7 @@ const Navbar = () => {
                     >
                       <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                     </svg>
-                    <p className={space.className}>{t("navbar.contact")}</p>
+                    <p className={space.className}>Kontakt</p>
                   </label>
                 </motion.div>
               </AnimatePresence>
@@ -331,9 +325,7 @@ const Navbar = () => {
                             : "flex items-center w-full font-medium text-gray-200 lg:group-hover:text-gray-300 transition-all duration-300"
                         }
                       >
-                        <p className={space.className}>
-                          {t("navbar.club.title")}
-                        </p>
+                        <p className={space.className}>Unser Verein</p>
                         <svg
                           width="16"
                           height="16"
@@ -358,7 +350,7 @@ const Navbar = () => {
                   </motion.div>
                 </AnimatePresence>
 
-                <div className="hs-dropdown-menu transition-[opacity,margin] hs-dropdown-open:opacity-100 opacity-0 space-y-2 pt-4 lg:pt-2 font-medium lg:font-normal lg:space-y-0 hidden z-10 lg:bg-neutral-800 lg:shadow-md rounded-lg p-2 divide-gray-200 before:absolute top-full before:-top-5 before:left-0 before:w-full before:h-5">
+                <div className="hs-dropdown-menu transition-[opacity,margin] hs-dropdown-open:opacity-100 opacity-0 lg:w-48 space-y-2 pt-4 lg:pt-2 font-medium lg:font-normal lg:space-y-0 hidden z-10 lg:bg-neutral-800 lg:shadow-md rounded-lg p-2 divide-gray-200 before:absolute top-full before:-top-5 before:left-0 before:w-full before:h-5">
                   <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 lg:rounded-md text-sm text-gray-300 lg:hover:bg-neutral-700 focus:ring-2 focus:ring-blue-500 "
                     href="/club#about"
@@ -366,9 +358,7 @@ const Navbar = () => {
                       setHambugerMenuIsOpen(false);
                     }}
                   >
-                    <p className={space.className}>
-                      {t("navbar.club.aboutUs")}
-                    </p>
+                    <p className={space.className}>Über uns</p>
                   </Link>
                   <span
                     className={classNames(
@@ -384,7 +374,7 @@ const Navbar = () => {
                       setHambugerMenuIsOpen(false);
                     }}
                   >
-                    <p className={space.className}> {t("navbar.club.board")}</p>
+                    <p className={space.className}>Vorstand</p>
                   </Link>
                   <span
                     className={classNames(
@@ -399,9 +389,7 @@ const Navbar = () => {
                       setHambugerMenuIsOpen(false);
                     }}
                   >
-                    <p className={space.className}>
-                      {t("navbar.club.stadium")}
-                    </p>
+                    <p className={space.className}>Stadion Buschallee</p>
                   </Link>
                   <span
                     className={classNames(
@@ -417,9 +405,7 @@ const Navbar = () => {
                       setHambugerMenuIsOpen(false);
                     }}
                   >
-                    <p className={space.className}>
-                      {t("navbar.club.imprint")}
-                    </p>
+                    <p className={space.className}>Impressum</p>
                   </Link>
                 </div>
               </div>
@@ -430,12 +416,7 @@ const Navbar = () => {
                 )}
               />
               <div onClick={() => setHambugerMenuIsOpen(false)}>
-                <Box
-                  delay={0.6}
-                  title={t("navbar.teams")}
-                  Href={"/teams"}
-                  icon={false}
-                />
+                <Box delay={0.6} title={"Teams"} Href={"/teams"} icon={false} />
               </div>
               <span
                 className={classNames(
@@ -447,7 +428,7 @@ const Navbar = () => {
               <div onClick={() => setHambugerMenuIsOpen(false)}>
                 <Box
                   delay={0.65}
-                  title={t("navbar.dates")}
+                  title={"Termine"}
                   Href={"/calendar"}
                   icon={false}
                 />
@@ -462,7 +443,7 @@ const Navbar = () => {
               <div onClick={() => setHambugerMenuIsOpen(false)}>
                 <Box
                   delay={0.7}
-                  title={t("navbar.documents")}
+                  title={"Dokumente"}
                   Href={"/documents"}
                   icon={false}
                 />
@@ -477,7 +458,7 @@ const Navbar = () => {
               <div onClick={() => setHambugerMenuIsOpen(false)}>
                 <Box
                   delay={0.7}
-                  title={t("navbar.volunteer")}
+                  title={"Mithelfen"}
                   Href={"/engagement"}
                   icon={false}
                 />
@@ -492,7 +473,7 @@ const Navbar = () => {
               <div onClick={() => setHambugerMenuIsOpen(false)}>
                 <Box
                   delay={0.7}
-                  title={t("navbar.shop")}
+                  title={"Shop"}
                   Href={
                     "https://canterbury.nl/en/club-shops/germany/rk03-berlin"
                   }
@@ -509,7 +490,6 @@ const Navbar = () => {
               />
             </div>
           </div>
-
           <div className="hidden lg:block">
             <AnimatePresence mode="wait">
               <motion.div
@@ -524,9 +504,7 @@ const Navbar = () => {
                   damping: 15,
                   delay: 0.75,
                 }}
-                className="flex items-center gap-x-6"
               >
-                <LanguageToggle />
                 <label
                   type="button"
                   className="relative group p-2 px-3 flex items-center gap-x-2 border border-dominantColor my-3 cursor-pointer text-dominantColor font-medium hover:text-black  duration-300 transition"
@@ -544,7 +522,7 @@ const Navbar = () => {
                   >
                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                   </svg>
-                  <p className={space.className}>{t("navbar.contact")}</p>
+                  <p className={space.className}>Kontakt</p>
                 </label>
               </motion.div>
             </AnimatePresence>

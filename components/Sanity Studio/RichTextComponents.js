@@ -1,6 +1,6 @@
 import { montserrat } from "@/public/fonts/fonts";
 import { urlFor } from "@/sanity/urlFor";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 
 export const RichTextComponents = {
   types: {

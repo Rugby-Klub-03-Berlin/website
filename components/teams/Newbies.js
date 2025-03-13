@@ -7,12 +7,10 @@ import dayjs from "dayjs";
 import { Divider } from "antd";
 import { urlFor } from "@/sanity/urlFor";
 import { CalendarDays, Dumbbell, X } from "lucide-react";
-import { useTranslations } from "next-intl";
 
 const Newbies = () => {
   const [selectedCard, setSelectedCard] = useState(null);
   const [newbies, setNewbies] = useState([{}]);
-  const t = useTranslations();
 
   useEffect(() => {
     document.getElementById("newbies").onmousemove = (e) => {
@@ -81,7 +79,7 @@ const Newbies = () => {
     <>
       <Divider />
       <div className="text-2xl pb-4">
-        <h1 className={space.className}>{t("teams.youth.title")}</h1>
+        <h1 className={space.className}>Nachwuchs</h1>
       </div>
       <div
         id="newbies"
@@ -118,7 +116,7 @@ const Newbies = () => {
                       </div>
                       <div className="text-l font-extralight">
                         <h1 className={montserrat.className}>
-                          {t("teams.training")}
+                          Training / Spielpläne
                         </h1>
                       </div>
                     </div>
@@ -156,7 +154,7 @@ const Newbies = () => {
                   </span>
 
                   <h3 className="text-xl font-bold text-neutral-300 ">
-                    {t("teams.practice")}
+                    Trainingszeiten
                   </h3>
                 </div>
                 <div class="p-1.5 min-w-full inline-block align-middle border border-neutral-800 rounded-lg">
@@ -168,13 +166,13 @@ const Newbies = () => {
                             scope="col"
                             class="px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase"
                           >
-                            {t("common.weekday")}
+                            Wochentag
                           </th>
                           <th
                             scope="col"
                             class="px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase"
                           >
-                            {t("common.time")}
+                            Uhrzeit
                           </th>
                         </tr>
                       </thead>
@@ -194,7 +192,7 @@ const Newbies = () => {
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="py-4">{t("team.trainer")}:</div>
+                  <div className="py-4">Trainer:innen:</div>
                   <div className="">
                     {selectedCard.trainer != null ? (
                       selectedCard.trainer.map((trainer) => (
@@ -204,7 +202,7 @@ const Newbies = () => {
                       ))
                     ) : (
                       <span className="inline-flex w-fit items-center gap-1.5 py-2 px-4 rounded-full text-xs font-medium bg-green-300/20 text-neutral-300">
-                        {t("teams.notrainer")}
+                        Noch keine Trainer
                       </span>
                     )}
                   </div>
@@ -217,15 +215,15 @@ const Newbies = () => {
                   </span>
 
                   <h3 className="text-xl font-bold text-neutral-300 ">
-                    {t("teams.gameplan")}
+                    Spielplan
                   </h3>
                 </div>
 
                 <div className="text-sm py-4">
                   <p className="text-neutral-300">
                     {selectedCard.gameplan == null
-                      ? t("teams.nogameplan")
-                      : t("teams.gameplanlink")}
+                      ? "Noch kein Spielplan"
+                      : "Diese können unter diesem Link gefunden werden "}
                   </p>
                   <a className="textDominantcolor" href={selectedCard.gameplan}>
                     {selectedCard.gameplan != null && selectedCard.gameplan}
