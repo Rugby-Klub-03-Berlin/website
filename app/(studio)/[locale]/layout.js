@@ -1,4 +1,4 @@
-import "@/app/globals.css";
+import "../../globals.css";
 
 export const metadata = {
   title: "Admin | Rugby Klub 03 Berlin",
