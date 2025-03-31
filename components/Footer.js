@@ -1,18 +1,19 @@
 "use client";
-import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
-import { MdOutlineEmail } from "react-icons/md";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link as ILink } from "@/i18n/navigation";
 import classNames from "classnames";
 import { poppins } from "@/public/fonts/fonts";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const FooterBottom = () => {
   return (
     <footer className="bg-neutral-950 absolute bottom-0 text-center z-[5]">
       <div className="relative text-center w-screen p-2 py-6 lg:py-8 ">
         <div className="w-full max-w-7xl m-auto justify-between lg:flex sm:items-center sm:justify-between">
-          <Link href="./#" className="flex flex-row items-center mb-2 ">
+          <ILink href="./#" className="flex flex-row items-center mb-2 ">
             <div className="">
               <Image width={25} height={25} src={"/images/logo.png"} />
             </div>
@@ -25,11 +26,11 @@ const FooterBottom = () => {
             >
               Rugby Klub 03 Berlin
             </div>
-          </Link>
+          </ILink>
           <div className="flex-row pt-2 lg:pt-0 flex lg:space-x-5 text-gray-500 text-sm">
-            <Link href="/club" className="pr-2 hover:underline">
-              Über uns
-            </Link>
+            <ILink href="/club" className="pr-2 hover:underline">
+              {t("club.aboutUs.title")}
+            </ILink>
             <Link
               href="/admin"
               target="_parent"
@@ -37,12 +38,12 @@ const FooterBottom = () => {
             >
               Admin
             </Link>
-            <Link href="/privacy" className="px-2 hover:underline">
-              Datenschutz
-            </Link>
-            <Link href="/club#impressum" className="px-2 hover:underline">
-              Impressum
-            </Link>
+            <ILink href="/privacy" className="px-2 hover:underline">
+              {t("privacy.title")}
+            </ILink>
+            <ILink href="/club#impressum" className="px-2 hover:underline">
+              {t("navbar.club.imprint")}
+            </ILink>
           </div>
         </div>
         <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8" />
@@ -54,7 +55,6 @@ const FooterBottom = () => {
                 Rugby Klub 03 Berlin
               </a>
             </div>
-
             <div class="hs-tooltip inline-block [--trigger:click] sm:[--placement:top]">
               <div class="hs-tooltip-toggle">
                 <div className="text-gray-500 text-sm hover:underline cursor-pointer">
@@ -90,21 +90,27 @@ const FooterBottom = () => {
                 </div>
               </div>
             </div>
+            <ILink
+              href="https://www.linkedin.com/in/martin-behrmann-2a047329b"
+              className="text-gray-500 text-sm hover:underline cursor-pointer"
+            >
+              <p>{t("common.createdBy")}</p>
+            </ILink>
           </div>
 
           <div className="flex space-x-6 mt-0 justify-center">
-            <Link
+            <ILink
               href="https://www.facebook.com/rugbyklub03berlin/?locale=de_DE"
               className="text-gray-500"
             >
               <BsFacebook className="w-5 h-5" />
-            </Link>
-            <Link
+            </ILink>
+            <ILink
               href="https://www.instagram.com/rk03berlin/?hl=de"
               className="text-gray-500"
             >
               <BsInstagram className="w-5 h-5" />
-            </Link>
+            </ILink>
           </div>
         </div>
       </div>
