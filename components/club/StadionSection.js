@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import trainingPicture from "public/images/club/stadion/training.jpg";
+import { useTranslations } from "next-intl";
 
 const StadionSection = () => {
   const [ref, inView] = useInView();
+  const t = useTranslations();
 
   useEffect(() => {
     if (inView) {
@@ -182,31 +184,21 @@ const StadionSection = () => {
         <div className="max-w-5xl text-start items-center justify-center flex flex-col h-full mx-auto sm:px-6 lg:px-8 py-4 space-y-10">
           <div className="text-start w-full ">
             <motion.h1
-              data-value="Stadion Buschallee"
+              data-value={t("club.stadium.title")}
               id="stadiontitle"
               className="text-5xl sm:text-6xl md:text-7xl text-neutral-300 w-fit"
               ref={ref}
             >
-              Stadion Buschallee
+              {t("club.stadium.title")}
             </motion.h1>
           </div>
           <div className="text-start text-neutral-400 ">
             <div className="md:w-2/3">
               <p className={montserrat.className}>
-                Auf der Anlage des Stadion Buschallee gibt es insgesamt drei
-                Rugbyplätze, davon sind zwei für Wettkampfveranstaltungen
-                nutzbar, der dritte wird von uns als Trainingsplatz genutzt.
-                Alle drei Plätze haben Naturrasen.
+                {t("club.stadium.firstParagraph")}
                 <br />
-                <br /> Dank des Engagements unserer Vereinsmitglieder verfügt
-                unser Hauptplatz über eine Tribüne. Das Gebäude, in dem sich
-                unsere Vereinsräume bis vor kurzem befanden, wird aktuell
-                saniert, sodass wir übergangsweise das Containergebäude am Platz
-                als Klubhaus nutzen, welches nach Fertigstellung der Bauarbeiten
-                zum Kraftraum umfunkfoniert werden soll.
-                <br /> Dank unseres Grilltempels machen wir es uns aktuell auch
-                ohne festes Klubhaus gemütlich und können gemeinsam schöne
-                Zeiten auf und neben dem Platz verbringen.
+                <br /> {t("club.stadium.secondParagraph")}
+                <br /> {t("club.stadium.thirdParagraph")}
               </p>
             </div>
           </div>
@@ -214,17 +206,16 @@ const StadionSection = () => {
             <div className="grid gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
               <div>
                 <h4 className="text-lg sm:text-xl font-medium text-neutral-300">
-                  Adresse
+                  {t("club.stadium.address.title")}
                 </h4>
 
                 <p className="mt-3 text-neutral-400">
-                  Hansastraße 190, 13088 Berlin (Parkplätze für Nutzer:innen der
-                  Sportanlage vorhanden)
+                  {t("club.stadium.address.address")}
                 </p>
               </div>
               <div className="flex flex-col">
                 <h4 className="text-lg sm:text-xl font-medium text-neutral-300 ">
-                  Erreichbar über
+                  {t("club.stadium.address.accessibility")}
                 </h4>
                 <div className="items-center mt-2">
                   <div className="mt-3 text-neutral-400 text-lg font-bold flex items-center space-x-4">
@@ -250,7 +241,7 @@ const StadionSection = () => {
 
               <div>
                 <h4 className="text-lg sm:text-xl font-medium text-neutral-300">
-                  Haltestellen
+                  {t("club.stadium.address.stop")}
                 </h4>
 
                 <p className="mt-3 text-neutral-400">

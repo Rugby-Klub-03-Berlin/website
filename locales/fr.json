@@ -1,0 +1,204 @@
+{
+  "common": {
+    "club": "Rugby Klub 03 Berlin",
+    "createdBy": "Créé par Martin Behrmann",
+    "readMore": "Lire la suite",
+    "new": "Nouveau",
+    "newestPosts": "Dernier post sur l'association",
+    "continueRead": "Lire la suite",
+    "lastPosts": "Derniers messages",
+    "report": "Rapport du match",
+    "viewMore": "Voir plus",
+    "all": "Tout afficher",
+    "reports": "Rapports de match",
+    "posts": "Messages",
+    "loading": "Chargement ...",
+    "read": "Lire",
+    "searchNews": "Rechercher des actualités...",
+    "post": "Post",
+    "weekday": "Jour de la semaine",
+    "time": "Temps",
+    "days": {
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche"
+    }
+  },
+  "navbar": {
+    "club": {
+      "title": "Notre Association",
+      "aboutUs": "À propos de nous",
+      "board": "Le conseil d'administration",
+      "stadium": "Stade Buschallee",
+      "imprint": "Mentions légales"
+    },
+    "teams": "Équipes",
+    "dates": "Rendez-vous",
+    "documents": "Documents",
+    "volunteer": "Participer",
+    "shop": "Boutique",
+    "contact": "Contact"
+  },
+  "home": {
+    "becomeMember": "Devenir membre",
+    "explore": {
+      "title": "Explorez notre",
+      "markedTitle": "association",
+      "first": {
+        "bottom": "Nous sommes le plus grand club de rugby de Berlin, situé à Weißensee. Nous aimons et vivons le rugby, sur et en dehors du terrain.",
+        "top": "Nous proposons du rugby à contact et du touch rugby, du rugby à 15 et à 7. Avec notre première équipe masculine, nous sommes même représentés en 1ère Bundesliga."
+      },
+      "second": {
+        "bottom": "Nous proposons des entraînements pour tous, à partir de 2 ans et demi. Dirigés par nos instructeurs, les différents groupes d'âge s'entraînent régulièrement chez nous à Buschallee.",
+        "top": "Intéressé par un entraînement d'essai ? Contactez-nous à jugend@rugbyklub03.berlin"
+      },
+      "third": {
+        "bottom": "Les femmes du RK jouent au rugby à 7 avec succès et participent avec la SG Berlin au championnat de rugby à 15.",
+        "top": "Le contact n'est pas votre truc ? Alors venez jouer avec nos femmes du touch rugby le mardi!"
+      }
+    }
+  },
+  "club": {
+    "aboutUs": {
+      "title": "À Propos De Nous",
+      "firstParagraph": "Le Rugby Klub 03 Berlin e.V., avec plus de 400 membres, est le plus grand club de rugby de Berlin. Bien qu'il ait été créé en 2003 à partir de la section rugby de l'ancien Post SV, l'histoire du rugby à Weißensee remonte à 1967.",
+      "secondParagraph": "Depuis la création du club indépendant il y a 20 ans, le club a constamment grandi et, depuis 2010, profite de l'utilisation d'un complexe de rugby bien équipé comprenant 2 terrains de jeu et un terrain d'entraînement, ce qui n'est pas une évidence pour les clubs de sport, et en particulier de rugby, à Berlin.",
+      "thirdParagraph": "Grâce à l'engagement des membres et en collaboration avec le bureau du district, ce complexe est choyé, entretenu et développé. En plus de deux équipes masculines (la première équipe masculine joue en 1ère Bundesliga), il y a une équipe féminine active en rugby à 7, ainsi que divers groupes d'entraînement de touch rugby. Toutefois, une attention particulière est accordée à la promotion de la jeunesse.",
+      "fourthParagraph": "Presque la moitié de tous les membres sont mineurs et jouent dans les différentes catégories d'âge de la section jeunesse. Les premières expériences de rugby peuvent être acquises dès l'âge de 3 ans et demi dans la catégorie U6. Les enfants et les jeunes sont accompagnés par des instructeurs qualifiés et dévoués, qui les encouragent et les défient de manière appropriée."
+    },
+    "board": {
+      "title": "Le conseil d'administration",
+      "description": "Tu trouveras ici le conseil d’administration du Rugby Klub 03 Berlin e.V. élu en 2023 ainsi que les coordonnées correspondantes:",
+      "doMore": "Tu veux faire plus pour l'association?",
+      "findOutMore": "En savoir plus"
+    },
+    "stadium": {
+      "title": "Stade Buschallee",
+      "firstParagraph": "Le complexe du Stade Buschallee dispose de trois terrains de rugby, dont deux peuvent être utilisés pour des compétitions, le troisième étant utilisé par nous comme terrain d'entraînement. Tous les trois ont une pelouse naturelle. Grâce à l'engagement de nos membres, notre terrain principal dispose d'une tribune.",
+      "secondParagraph": "Le bâtiment, qui abritait nos locaux jusqu'à récemment, est actuellement en rénovation. Nous utilisons donc temporairement le bâtiment conteneur sur place comme clubhouse, qui devrait être transformé en salle de musculation une fois les travaux terminés.",
+      "thirdParagraph": "Grâce à notre barbecue, nous nous sentons à l'aise même sans un clubhouse permanent et pouvons passer ensemble de bons moments sur et en dehors du terrain.",
+      "address": {
+        "title": "Adresse",
+        "address": "Hansastraße 190, 13088 Berlin (parking disponible pour les utilisateurs du complexe sportif)",
+        "accessibility": "Accessible par le",
+        "stop": "Arrêts"
+      }
+    },
+    "legal": {
+      "title": "Mentions Légales",
+      "imprint": {
+        "title": "Informations selon § 5 TMG Rugby Klub 03 Berlin e.V.",
+        "address": "Hansastraße 190, 13088 Berlin"
+      },
+      "register": {
+        "association": {
+          "title": "Registre des associations",
+          "content": "VR22787B"
+        },
+        "court": {
+          "title": "Registre du tribunal",
+          "content": "Tribunal d'instance de Berlin Charlottenburg"
+        }
+      },
+      "represented": {
+        "title": "Représenté par",
+        "content": "Le conseil d'administration"
+      },
+      "contact": {
+        "title": "Contact",
+        "email": "E-Mail: info@rugbyklub03.berlin"
+      },
+      "tax": {
+        "title": "Numéro de TVA",
+        "content": "Numéro d'identification fiscale selon § 27 a de la loi sur la TVA:",
+        "id": "27/617/61962"
+      },
+      "consumer": {
+        "title": "Règlement des litiges des consommateurs / Bureau universel de médiation",
+        "content": "Nous ne sommes pas disposés ou obligés de participer à des procédures de règlement des litiges devant un bureau de médiation des consommateurs."
+      }
+    }
+  },
+  "teams": {
+    "title": "Équipes",
+    "join": {
+      "title": "Vous voulez vous entraîner avec nous?",
+      "content": "Vous voulez vous entraîner avec nous? Alors venez simplement aux heures d'entraînement ou contactez-nous aux adresses e-mail suivantes:"
+    },
+    "adults": {
+      "title": "Adultes",
+      "email": "koordination@rugbyklub03.berlin"
+    },
+    "youth": {
+      "title": "Enfants",
+      "email": "jugend@rugbyklub03.berlin"
+    },
+    "training": "Entraînement / Plans de jeu",
+    "gameplan": "Plan de jeu",
+    "practice": "Entraînement",
+    "gameplanlink": "Vous pouvez les trouver en cliquant sur ce lien ",
+    "nogameplan": "Pas encore de plan de jeu",
+    "notrainer": "Pas d'entraîneur pour le moment"
+  },
+  "dates": {
+    "title": "Dates",
+    "upcomingEvents": "Prochaines dates"
+  },
+  "documents": {
+    "title": "Documents",
+    "description": "Ici, vous trouverez des documents de l'association tels que nos statuts ou notre ordonnance sur les cotisations actuelles.",
+    "member": {
+      "titleStart": "Vous êtes ici pour devenir",
+      "marked": "membre",
+      "titleEnd": "chez nous? Yay! Alors voici comment procéder:",
+      "steps": {
+        "first": "Téléchargez notre formulaire d'adhésion ainsi que le consentement à la protection des données ou prenez un exemplaire dans notre clubhouse (directement à la porte).",
+        "second": "Remplissez les deux documents et signez-les.",
+        "third": "Envoyez-les par e-mail à mitglieder@rugbyklub03.berlin ou déposez-les dans notre clubhouse (compartiment derrière le comptoir).",
+        "fourth": "Vous faites maintenant partie de la famille RK. Nous nous réjouissons de passer du temps avec vous!"
+      }
+    }
+  },
+  "volunteer": {
+    "title": "Engagement dans l'association",
+    "content": "Notre vie associative ne peut être maintenue que grâce à nos nombreux membres engagés. Ces dernières années, divers groupes de travail se sont formés, qui sont toujours heureux d'accueillir de nouveaux participants. Vous souhaitez également vous impliquer davantage dans l'association et vous retrouvez vous et vos compétences et préférences parmi les groupes de travail ? Alors voici les coordonnées pour vous:",
+    "workingGroups": {
+      "gathering": {
+        "title": "La Table Ronde",
+        "content": "Vous avez déjà assisté à un jour de match à domicile ou à un autre événement chez nous à Buschallee et vous vous êtes réjoui de la riche offre de gâteaux, de grillades et de boissons? Vous aimez rendre les gens heureux avec de la nourriture? Alors vous êtes parfaitement à votre place dans notre Table Ronde. Le cœur et l'âme de chaque événement chez nous à Buschallee, notre première ligne se réjouit de chaque nouveau membre.",
+        "email": "tafelrunde@rugbyklub03.berlin"
+      },
+      "eventTeam": {
+        "title": "L'Équipe Événementielle",
+        "content": "Les fêtes sont totalement votre truc? Alors vous êtes exactement au bon endroit avec notre équipe événementielle! Que ce soit pour un festival d'été, un marché de Noël, un festival de lanternes… grâce à ce groupe de travail, les fêtes de l'association sont toujours un succès total. Comme il y a toujours des raisons de faire la fête, l'équipe événementielle est toujours très occupée et vous êtes, en tant que planificateur de fête passionné, barman, DJ, animateur ou talent d'organisation, cordialement invité.",
+        "email": "event@rugbyklub03.berlin"
+      },
+      "financialSupport": {
+        "title": "Soutien Financier",
+        "content": "Surtout le travail avec les jeunes coûte pas mal d'argent à notre association, nous sommes donc heureux de chaque don financier pour permettre à nos plus jeunes de vivre de superbes expériences d'entraînement et de compétition. Vous trouverez ici nos coordonnées bancaires, nous émettons volontiers des reçus de don:",
+        "email": "finanzen@rugbyklub03.berlin",
+        "bankingDetails": {
+          "bank": "Berliner Sparkasse",
+          "iban": "DE30 100 500 00 4133356336",
+          "bic": "BELADEBEXXX",
+          "mail": "finanzen@rugbyklub03.berlin"
+        }
+      }
+    },
+    "sponsoring": {
+      "title": "Sponsoring",
+      "content": "Nous tenons à remercier tout particulièrement les personnes qui soutiennent notre association de manière décisive par leur sponsoring. Grâce à vous, nous pouvons développer et faire progresser notre association en permanence.",
+      "contribute": "Vous souhaitez vous aussi sponsoriser notre association ? Alors contactez-nous à l'adresse vorsitzender@rugbyklub03.berlin"
+    }
+  },
+  "privacy": {
+    "title": "Protection des données"
+  },
+  "team": {
+    "trainer": "Entraîneur"
+  }
+}
