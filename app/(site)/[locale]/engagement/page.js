@@ -45,11 +45,22 @@ export default function Engagement() {
 
   const sponsoringImages = [
     "/images/sponsoring/Biltong.png",
-    "/images/sponsoring/CB.png",
-    "/images/sponsoring/Kortas.png",
-    "/images/sponsoring/Oranke-Bodenleger.png",
-    "/images/sponsoring/Rewe-Daniel-Kühn.png",
-    "/images/sponsoring/VeitBraml.png",
+    "/images/sponsoring/JeTi.png",
+    "/images/sponsoring/BVLT.png",
+    "/images/sponsoring/ChezBruno.png",
+    "/images/sponsoring/CliffsOfDooneen.png",
+    "/images/sponsoring/DeutscheVermögensberatung.png",
+    "/images/sponsoring/HolzBauSaschaEbel.png",
+    "/images/sponsoring/KPJ.png",
+    "/images/sponsoring/kraftwerk.png",
+    "/images/sponsoring/LandladenKastaven.png",
+    "/images/sponsoring/OrankeBodenleger.png",
+    "/images/sponsoring/PlanungsbüroKortas.png",
+    "/images/sponsoring/REWEDanielKühn.png",
+    "/images/sponsoring/ROYEdelstahl.png",
+    "/images/sponsoring/SteffenClasver.png",
+    "/images/sponsoring/VandenFrancken.png",
+    "/images/sponsoring/WildhofMüncheberg.png",
   ];
 
   const firstRow = sponsoringImages.slice(
