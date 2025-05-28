@@ -52,7 +52,7 @@ export default function Engagement() {
     "/images/sponsoring/DeutscheVermögensberatung.png",
     "/images/sponsoring/HolzBauSaschaEbel.png",
     "/images/sponsoring/KPJ.png",
-    "/images/sponsoring/kraftwerk.png",
+    "/images/sponsoring/Kraftwerk.png",
     "/images/sponsoring/LandladenKastaven.png",
     "/images/sponsoring/OrankeBodenleger.png",
     "/images/sponsoring/PlanungsbüroKortas.png",
