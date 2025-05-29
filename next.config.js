@@ -23,6 +23,16 @@ const nextConfig = {
       },
     ];
   },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.mp4$/i,
+      type: "asset/resource",
+      generator: {
+        filename: "static/videos/[hash][ext][query]",
+      },
+    });
+    return config;
+  },
   trailingSlash: true,
 };
 

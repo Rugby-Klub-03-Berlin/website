@@ -6,6 +6,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
+import biltong from "@/assets/images/sponsoring/biltong.png";
+import jeti from "@/assets/images/sponsoring/jeti.png";
+import bvlt from "@/assets/images/sponsoring/bvlt.png";
+import chezBruno from "@/assets/images/sponsoring/chez-bruno.png";
+import cliffsOfDooneen from "@/assets/images/sponsoring/cliffs-of-dooneen.png";
+import deutscheVermoegensberatung from "@/assets/images/sponsoring/deutsche-vermoegensberatung.png";
+import holzbauSaschaEbel from "@/assets/images/sponsoring/holzbau-saschaebel.png";
+import kpj from "@/assets/images/sponsoring/kpj.png";
+import kraftwerk from "@/assets/images/sponsoring/kraftwerk.png";
+import landladenKastaven from "@/assets/images/sponsoring/landladen-kastaven.png";
+import orankeBodenleger from "@/assets/images/sponsoring/oranke-bodenleger.png";
+import planungsbueroKortas from "@/assets/images/sponsoring/planungsbuero-kortas.png";
+import reweDanielKuehn from "@/assets/images/sponsoring/rewe-danielkuehn.png";
+import royEdelstahl from "@/assets/images/sponsoring/roy-edelstahl.png";
+import steffenClasver from "@/assets/images/sponsoring/steffen-clasver.png";
+import vandenFrancken from "@/assets/images/sponsoring/vanden-francken.png";
+import wildhofMuencheberg from "@/assets/images/sponsoring/wildhof-muencheberg.png";
 
 export default function Engagement() {
   const t = useTranslations();
@@ -44,23 +61,23 @@ export default function Engagement() {
   ];
 
   const sponsoringImages = [
-    "/images/sponsoring/biltong.png",
-    "/images/sponsoring/jeti.png",
-    "/images/sponsoring/bvlt.png",
-    "/images/sponsoring/chez-bruno.png",
-    "/images/sponsoring/cliffs-of-dooneen.png",
-    "/images/sponsoring/deutsche-vermoegensberatung.png",
-    "/images/sponsoring/holzbau-saschaebel.png",
-    "/images/sponsoring/kpj.png",
-    "/images/sponsoring/kraftwerk.png",
-    "/images/sponsoring/landladen-kastaven.png",
-    "/images/sponsoring/oranke-bodenleger.png",
-    "/images/sponsoring/planungsbuero-kortas.png",
-    "/images/sponsoring/rewe-danielkuehn.png",
-    "/images/sponsoring/roy-edelstahl.png",
-    "/images/sponsoring/steffen-clasver.png",
-    "/images/sponsoring/vanden-francken.png",
-    "/images/sponsoring/wildhof-muencheberg.png",
+    biltong,
+    jeti,
+    bvlt,
+    chezBruno,
+    cliffsOfDooneen,
+    deutscheVermoegensberatung,
+    holzbauSaschaEbel,
+    kpj,
+    kraftwerk,
+    landladenKastaven,
+    orankeBodenleger,
+    planungsbueroKortas,
+    reweDanielKuehn,
+    royEdelstahl,
+    steffenClasver,
+    vandenFrancken,
+    wildhofMuencheberg,
   ];
 
   const firstRow = sponsoringImages.slice(
