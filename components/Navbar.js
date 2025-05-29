@@ -8,6 +8,8 @@ import classNames from "classnames";
 import { ExternalLink, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { LanguageToggle } from "./ui/language-toggle";
+import logo from "@/public/images/logo.png";
+import Image from "next/image";
 
 const Box = ({ delay, title, Href, icon, target }) => {
   const [scroll, setScroll] = useState(false);
@@ -191,10 +193,12 @@ const Navbar = () => {
                   }}
                   className="flex flex-grow"
                 >
-                  <motion.img
-                    className="h-8 px-2 lg:px-0 lg:pr-2"
-                    src="./images/logo.png"
+                  <Image
+                    className="h-8 w-fit px-2 lg:px-0 lg:pr-2"
+                    src={logo}
                     alt="Logo"
+                    width={0}
+                    height={0}
                   />
                   <motion.div
                     className={`text-${textColor} font-semibold text-2xl`}
