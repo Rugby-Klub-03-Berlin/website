@@ -157,7 +157,7 @@ export default function Engagement() {
               {t("volunteer.sponsoring.content")}
             </div>
             <div className="relative flex w-full my-10 flex-col gap-4 items-center justify-center overflow-hidden">
-              <Marquee pauseOnHover className="[--duration:20s]">
+              <Marquee pauseOnHover className="[--duration:50s]">
                 {firstRow.map((src, index) => (
                   <Image
                     key={index}
@@ -170,7 +170,7 @@ export default function Engagement() {
                   />
                 ))}
               </Marquee>
-              <Marquee reverse pauseOnHover className="[--duration:20s]">
+              <Marquee reverse pauseOnHover className="[--duration:50s]">
                 {secondRow.map((src, index) => (
                   <Image
                     key={index}
