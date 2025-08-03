@@ -23,7 +23,9 @@ export default function Calendar() {
     fetchData();
   }, []);
   const sendMail = () => {
-    window.location.href = `mailto:kinderschutz@rugbyklub03.berlin`;
+    window.location.href = `mailto:${
+      childProtection.email || "kinderschutz@rugbyklub03.berlin"
+    }`;
   };
 
   return (
