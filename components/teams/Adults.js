@@ -108,28 +108,28 @@ const Adults = () => {
             ))}
           </>
         ) : (
-          <div class="flex flex-row items-center justify-center h-[260px] rounded-[10px] bg-neutral-900 space-x-5 animate-pulse" />
+          <div className="flex flex-row items-center justify-center h-[260px] rounded-[10px] bg-neutral-900 space-x-5 animate-pulse" />
         )}
       </div>
       {selectedCard != null && (
         <div
           id="hs-overlay-adults"
-          class="hs-overlay hidden w-full h-full bg-neutral-950/30 backdrop-blur-sm fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto"
+          className="hs-overlay hidden w-full h-full bg-neutral-950/30 backdrop-blur-sm fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto"
         >
-          <div class="hs-overlay-open:opacity-100 hs-overlay-open:duration-300 mt-0 sm:m-3 opacity-0 ease-out transition-all sm:max-w-xl sm:w-full sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-start sm:items-center">
-            <div class="flex flex-col bg-neutral-950 sm:rounded-2xl w-full">
-              <div class="flex justify-between items-center py-3 px-4">
-                <h3 class="font-bold text-xl text-neutral-300">
+          <div className="hs-overlay-open:opacity-100 hs-overlay-open:duration-300 mt-0 sm:m-3 opacity-0 ease-out transition-all sm:max-w-xl sm:w-full sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-start sm:items-center">
+            <div className="flex flex-col bg-neutral-950 sm:rounded-2xl w-full">
+              <div className="flex justify-between items-center py-3 px-4">
+                <h3 className="font-bold text-xl text-neutral-300">
                   {selectedCard.name}
                 </h3>
                 <button
-                  class="rounded-full bg-neutral-900 text-neutral-400 hover:bg-neutral-800 transition duration-300 p-1"
+                  className="rounded-full bg-neutral-900 text-neutral-400 hover:bg-neutral-800 transition duration-300 p-1"
                   data-hs-overlay="#hs-overlay-adults"
                 >
                   <X className="w-6 h-6" />
                 </button>
               </div>
-              <div class="p-4">
+              <div className="p-4">
                 <div className="flex flex-row items-center pb-4">
                   <span className="p-1 mr-2 rounded-full border-4 border-green-500/5 bg-green-500/20 text-green-700">
                     <Dumbbell className="w-5 h-5" />
@@ -139,32 +139,32 @@ const Adults = () => {
                     {t("teams.practice")}
                   </h3>
                 </div>
-                <div class="p-1.5 min-w-full inline-block align-middle border border-neutral-800 rounded-lg">
-                  <div class="overflow-hidden">
-                    <table class="min-w-full divide-y-2 divide-neutral-600">
+                <div className="p-1.5 min-w-full inline-block align-middle border border-neutral-800 rounded-lg">
+                  <div className="overflow-hidden">
+                    <table className="min-w-full divide-y-2 divide-neutral-600">
                       <thead>
                         <tr>
                           <th
                             scope="col"
-                            class="px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase"
+                            className="px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase"
                           >
                             {t("common.weekday")}
                           </th>
                           <th
                             scope="col"
-                            class="px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase"
+                            className="px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase"
                           >
                             {t("common.time")}
                           </th>
                         </tr>
                       </thead>
-                      <tbody class="divide-y divide-neutral-700">
+                      <tbody className="divide-y divide-neutral-700">
                         {selectedCard.availability.map((availability) => (
-                          <tr class="hover:bg-neutral-900 transition duration-300 text-neutral-300">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                          <tr className="hover:bg-neutral-900 transition duration-300 text-neutral-300">
+                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                               {availability.day}
                             </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                            <td className="px-6 py-4 whitespace-nowrap text-sm">
                               {availability.from} - {availability.to}
                             </td>
                           </tr>
@@ -190,7 +190,7 @@ const Adults = () => {
                   </div>
                 </div>
               </div>
-              <div class="p-4 pb-0">
+              <div className="p-4 pb-0">
                 <div className="flex flex-row items-center">
                   <span className="p-1 mr-2 rounded-full border-4 border-green-500/5 bg-green-500/20 text-green-700">
                     <CalendarDays className="w-5 h-5" />

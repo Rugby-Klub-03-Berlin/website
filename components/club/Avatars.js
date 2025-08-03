@@ -5,30 +5,30 @@ const Avatars = ({ avatars }) => {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
       {avatars.map((avatar) => (
-        <div class="flex flex-col rounded-xl p-4 md:p-6 bg-neutral-900 border border-neutral-800 justify-between">
+        <div className="flex flex-col rounded-xl p-4 md:p-6 bg-neutral-900 border border-neutral-800 justify-between">
           <div>
-            <div class="flex items-center gap-x-4">
+            <div className="flex items-center gap-x-4">
               <img
-                class="rounded-full w-[4.5rem] h-[4.5rem] object-cover"
+                className="rounded-full w-[4.5rem] h-[4.5rem] object-cover"
                 src={
                   avatar.image != null && urlFor(avatar.image).crop("center")
                 }
                 alt="Image Description"
               />
-              <div class="grow">
-                <h3 class="font-medium text-neutral-500">{avatar.name}</h3>
-                <p class="text-xs uppercase text-neutral-700">
+              <div className="grow">
+                <h3 className="font-medium text-neutral-500">{avatar.name}</h3>
+                <p className="text-xs uppercase text-neutral-700">
                   {avatar.position}
                 </p>
               </div>
             </div>
-            <p class="mt-3 text-neutral-500">{avatar.description}</p>
+            <p className="mt-3 text-neutral-500">{avatar.description}</p>
           </div>
 
-          <div class="mt-3 space-x-1">
+          <div className="mt-3 space-x-1">
             <button
               type="submit"
-              class="inline-flex justify-center items-center text-neutral-500 border border-neutral-800 w-8 h-8 rounded-md hover:text-neutral-600 hover:shadow-md transition duration-200"
+              className="inline-flex justify-center items-center text-neutral-500 border border-neutral-800 w-8 h-8 rounded-md hover:text-neutral-600 hover:shadow-md transition duration-200"
               onClick={() => {
                 window.location.href = `mailto:${avatar.email}`;
               }}

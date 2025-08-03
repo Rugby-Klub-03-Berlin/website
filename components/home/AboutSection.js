@@ -190,7 +190,7 @@ export default function AboutSection() {
               className="h-[58.33333vh] md:min-h-[55rem] md:h-screen w-screen text-center"
               key={item.id}
             >
-              <div class="h-full w-full bg-neutral-800 animate-pulse" />
+              <div className="h-full w-full bg-neutral-800 animate-pulse" />
 
               <Image
                 src={item.image}

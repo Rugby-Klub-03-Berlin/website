@@ -108,57 +108,57 @@ export default function Dokumente() {
                   {t("documents.member.marked")}
                 </text>
                 {t("documents.member.titleEnd")}
-                <ul class="relative flex flex-col md:flex-row gap-2 mb-10 mt-10">
-                  <li class="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
-                    <div class="min-w-[28px] min-h-[28px] flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
-                      <span class="w-7 h-7 flex justify-center items-center flex-shrink-0 bg-neutral-800 font-medium text-gray-800 rounded-full">
+                <ul className="relative flex flex-col md:flex-row gap-2 mb-10 mt-10">
+                  <li className="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
+                    <div className="min-w-[28px] min-h-[28px] flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
+                      <span className="w-7 h-7 flex justify-center items-center flex-shrink-0 bg-neutral-800 font-medium text-gray-800 rounded-full">
                         <ArrowDownToLine className="flex-shrink-0 w-4 h-4 rounded-full text-white" />
                       </span>
-                      <div class="mt-2 w-px h-full min-h-[70px] md:min-h-0 md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden"></div>
+                      <div className="mt-2 w-px h-full min-h-[70px] md:min-h-0 md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden"></div>
                     </div>
-                    <div class="grow md:grow-0 md:mt-3 pb-5">
-                      <p class="text-sm text-neutral-300">
+                    <div className="grow md:grow-0 md:mt-3 pb-5">
+                      <p className="text-sm text-neutral-300">
                         {t("documents.member.steps.first")}
                       </p>
                     </div>
                   </li>
 
-                  <li class="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
-                    <div class="min-w-[28px] min-h-[28px] flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
-                      <span class="w-7 h-7 flex justify-center items-center flex-shrink-0 bg-neutral-800 font-medium text-gray-800 rounded-full">
+                  <li className="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
+                    <div className="min-w-[28px] min-h-[28px] flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
+                      <span className="w-7 h-7 flex justify-center items-center flex-shrink-0 bg-neutral-800 font-medium text-gray-800 rounded-full">
                         <PenLine className="flex-shrink-0 w-4 h-4 rounded-full text-white" />
                       </span>
-                      <div class="mt-2 w-px h-full min-h-[70px] md:min-h-0 md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden"></div>
+                      <div className="mt-2 w-px h-full min-h-[70px] md:min-h-0 md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden"></div>
                     </div>
-                    <div class="grow md:grow-0 md:mt-3 pb-5">
-                      <p class="text-sm text-neutral-300">
+                    <div className="grow md:grow-0 md:mt-3 pb-5">
+                      <p className="text-sm text-neutral-300">
                         {t("documents.member.steps.second")}
                       </p>
                     </div>
                   </li>
 
-                  <li class="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
-                    <div class="min-w-[28px] min-h-[28px] flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
-                      <span class="w-7 h-7 flex justify-center items-center flex-shrink-0 bg-neutral-800 font-medium text-gray-800 rounded-full">
+                  <li className="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
+                    <div className="min-w-[28px] min-h-[28px] flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
+                      <span className="w-7 h-7 flex justify-center items-center flex-shrink-0 bg-neutral-800 font-medium text-gray-800 rounded-full">
                         <Mail className="flex-shrink-0 w-4 h-4 rounded-full text-white" />
                       </span>
-                      <div class="mt-2 w-px h-full min-h-[70px] md:min-h-0 md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden"></div>
+                      <div className="mt-2 w-px h-full min-h-[70px] md:min-h-0 md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden"></div>
                     </div>
-                    <div class="grow md:grow-0 md:mt-3 pb-5">
-                      <p class="text-sm text-neutral-300">
+                    <div className="grow md:grow-0 md:mt-3 pb-5">
+                      <p className="text-sm text-neutral-300">
                         {t("documents.member.steps.third")}
                       </p>
                     </div>
                   </li>
-                  <li class="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
-                    <div class="min-w-[28px] min-h-[28px] flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
-                      <span class="w-7 h-7 flex justify-center items-center flex-shrink-0 bg-green-600 font-medium text-gray-800 rounded-full">
+                  <li className="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
+                    <div className="min-w-[28px] min-h-[28px] flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
+                      <span className="w-7 h-7 flex justify-center items-center flex-shrink-0 bg-green-600 font-medium text-gray-800 rounded-full">
                         <CheckCircle className="flex-shrink-0 w-4 h-4 rounded-full text-white" />
                       </span>
-                      <div class="mt-2 w-px h-full min-h-[70px] md:min-h-0 md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden"></div>
+                      <div className="mt-2 w-px h-full min-h-[70px] md:min-h-0 md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden"></div>
                     </div>
-                    <div class="grow md:grow-0 md:mt-3 pb-5">
-                      <p class="text-sm text-neutral-300">
+                    <div className="grow md:grow-0 md:mt-3 pb-5">
+                      <p className="text-sm text-neutral-300">
                         {t("documents.member.steps.fourth")}
                       </p>
                     </div>
