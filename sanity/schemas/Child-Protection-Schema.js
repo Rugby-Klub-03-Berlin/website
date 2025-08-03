@@ -15,7 +15,6 @@ const childProtection = {
           type: "string",
         },
       ],
-      validation: (Rule) => Rule.required(),
     },
     {
       title: "Inhalt",

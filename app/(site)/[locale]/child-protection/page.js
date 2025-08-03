@@ -45,13 +45,15 @@ export default function Calendar() {
           className={"pt-28 pb-[15rem] lg:pb-[12rem] text-white bg-neutral-950"}
         >
           <div className="max-w-[81rem] px-[3%] mx-auto">
-            <div className="relative w-full md:mb-4">
-              <img
-                src={childProtection?.image}
-                alt={childProtection?.name}
-                className="aspect-video object-cover w-full h-full"
-              />
-            </div>
+            {childProtection?.image && (
+              <div className="relative w-full md:mb-4">
+                <img
+                  src={childProtection?.image}
+                  alt={childProtection?.name}
+                  className="aspect-video object-cover w-full h-full"
+                />
+              </div>
+            )}
             <div className="text-neutral-300">
               <PortableText
                 value={childProtection?.content}
