@@ -34,7 +34,8 @@
       "aboutUs": "Über Uns",
       "board": "Vorstand",
       "stadium": "Stadion Buschallee",
-      "imprint": "Impressum"
+      "imprint": "Impressum",
+      "child-protection": "Kinderschutz"
     },
     "teams": "Teams",
     "dates": "Termine",
@@ -121,6 +122,9 @@
         "title": "Verbraucherstreitbeilegung / Universalschlichtungsstelle",
         "content": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
       }
+    },
+    "childProtection": {
+      "contact": "Für weitere Information, melden euch gerne unter {email}"
     }
   },
   "teams": {

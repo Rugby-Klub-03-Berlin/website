@@ -34,7 +34,8 @@
       "aboutUs": "À propos de nous",
       "board": "Le conseil d'administration",
       "stadium": "Stade Buschallee",
-      "imprint": "Mentions légales"
+      "imprint": "Mentions légales",
+      "child-protection": "Protection des enfants"
     },
     "teams": "Équipes",
     "dates": "Rendez-vous",
@@ -121,6 +122,9 @@
         "title": "Règlement des litiges des consommateurs / Bureau universel de médiation",
         "content": "Nous ne sommes pas disposés ou obligés de participer à des procédures de règlement des litiges devant un bureau de médiation des consommateurs."
       }
+    },
+    "childProtection": {
+      "contact": "Pour plus d'informations, n'hésitez pas à nous contacter à {email}"
     }
   },
   "teams": {

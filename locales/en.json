@@ -34,7 +34,8 @@
       "aboutUs": "About Us",
       "board": "Board",
       "stadium": "Buschallee Stadium",
-      "imprint": "Legal Notice"
+      "imprint": "Legal Notice",
+      "child-protection": "Child protection"
     },
     "teams": "Teams",
     "dates": "Dates",
@@ -121,6 +122,9 @@
         "title": "Consumer Dispute Resolution / Universal Arbitration Board",
         "content": "We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board."
       }
+    },
+    "childProtection": {
+      "contact": "For further information, please contact us at {email}"
     }
   },
   "teams": {
