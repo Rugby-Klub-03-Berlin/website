@@ -1,5 +1,6 @@
 import blog from "./Blog-Schema";
 import board from "./Board-Schema";
+import childProtection from "./Child-Protection-Schema";
 import documents from "./Document-Schema";
 import event from "./Events-Schema";
 import gamereport from "./GameReports-Schema";
@@ -16,6 +17,7 @@ const schemas = [
   timeValueType,
   documents,
   board,
+  childProtection,
 ];
 
 export default schemas;

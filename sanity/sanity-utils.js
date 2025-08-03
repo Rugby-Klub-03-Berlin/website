@@ -135,3 +135,15 @@ export async function getDocuments() {
       }`
   );
 }
+
+export async function getChildProtection() {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "child-protection"]{
+        _id,
+        _createdAt,
+        "image": image.asset->url,
+        content,
+        email,
+      }[0]`
+  );
+}

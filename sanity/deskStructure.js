@@ -1,5 +1,13 @@
 import { orderableDocumentListDeskItem } from "@sanity/orderable-document-list";
-import { Folder } from "lucide-react";
+import {
+  Folder,
+  Users,
+  Dumbbell,
+  Calendar,
+  StickyNote,
+  Trophy,
+  Baby,
+} from "lucide-react";
 
 export default (S, context) =>
   S.list()
@@ -7,43 +15,52 @@ export default (S, context) =>
     .items([
       S.listItem()
         .title("Beiträge")
-        .icon(Folder)
+        .icon(StickyNote)
         .child(
           S.list()
             .title("Beitragsart")
             .items([
               S.listItem()
                 .title("Blogbeiträge")
-                .icon(Folder)
+                .icon(StickyNote)
                 .child(S.documentTypeList("blog")),
               S.listItem()
                 .title("Spielberichte")
-                .icon(Folder)
+                .icon(StickyNote)
                 .child(S.documentTypeList("gamereport")),
             ])
         ),
       S.listItem()
         .title("Termine")
-        .icon(Folder)
+        .icon(Calendar)
         .child(S.documentTypeList("event")),
       S.listItem()
         .title("Klub")
-        .icon(Folder)
+        .icon(Trophy)
         .child(
           S.list()
             .title("Klub")
             .items([
+              S.listItem()
+                .title("Kinderschutz")
+                .icon(Baby)
+                .child(
+                  S.document()
+                    .title("Kinderschutz")
+                    .schemaType("child-protection")
+                    .documentId("child-protection")
+                ),
               orderableDocumentListDeskItem({
                 type: "board",
                 title: "Vorstand",
-                icon: Folder,
+                icon: Users,
                 S,
                 context,
               }),
               orderableDocumentListDeskItem({
                 type: "training",
                 title: "Trainingsgruppen",
-                icon: Folder,
+                icon: Dumbbell,
                 S,
                 context,
               }),
