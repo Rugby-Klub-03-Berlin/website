@@ -114,9 +114,11 @@
         "email": "E-Mail: info@rugbyklub03.berlin"
       },
       "tax": {
+        "number": "Steuernummer",
         "title": "Umsatzsteuer-ID",
         "content": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:",
-        "id": "27/617/61962"
+        "id": "27/617/61962",
+        "salesID": "DE285521723"
       },
       "consumer": {
         "title": "Verbraucherstreitbeilegung / Universalschlichtungsstelle",

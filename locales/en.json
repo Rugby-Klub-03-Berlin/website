@@ -116,7 +116,9 @@
       "tax": {
         "title": "Sales tax ID",
         "content": "Sales tax identification number according to § 27 a sales tax law:",
-        "id": "27/617/61962"
+        "id": "27/617/61962",
+        "number": "Tax Number",
+        "salesID": "DE285521723"
       },
       "consumer": {
         "title": "Consumer Dispute Resolution / Universal Arbitration Board",

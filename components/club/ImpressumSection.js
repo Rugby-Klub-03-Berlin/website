@@ -43,9 +43,12 @@ const ImpressumSection = () => {
             <div className="font-bold">{t("club.legal.contact.title")}</div>
             {t("club.legal.contact.email")}
             <br /> <br />
+            <div className="font-bold">{t("club.legal.tax.number")}</div>
+            {t("club.legal.tax.id")}
+            <br /> <br />
             <div className="font-bold">{t("club.legal.tax.title")}</div>
             {t("club.legal.tax.content")}
-            <br /> {t("club.legal.tax.id")}
+            <br /> {t("club.legal.tax.salesID")}
             <br /> <br />
             <div className="font-bold">{t("club.legal.consumer.title")}</div>
             {t("club.legal.consumer.content")}

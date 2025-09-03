@@ -116,7 +116,9 @@
       "tax": {
         "title": "Numéro de TVA",
         "content": "Numéro d'identification fiscale selon § 27 a de la loi sur la TVA:",
-        "id": "27/617/61962"
+        "id": "27/617/61962",
+        "number": "Numéro fiscal",
+        "salesID": "DE285521723"
       },
       "consumer": {
         "title": "Règlement des litiges des consommateurs / Bureau universel de médiation",
