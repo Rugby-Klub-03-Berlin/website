@@ -7,6 +7,7 @@ import {
   StickyNote,
   Trophy,
   Baby,
+  HeartHandshake,
 } from "lucide-react";
 
 export default (S, context) =>
@@ -68,6 +69,13 @@ export default (S, context) =>
                 type: "documents",
                 title: "Dokumente",
                 icon: Folder,
+                S,
+                context,
+              }),
+              orderableDocumentListDeskItem({
+                type: "sponsor",
+                title: "Sponsoren",
+                icon: HeartHandshake,
                 S,
                 context,
               }),

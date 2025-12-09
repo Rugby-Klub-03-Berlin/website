@@ -514,6 +514,21 @@ const Navbar = () => {
               <div onClick={() => setHambugerMenuIsOpen(false)}>
                 <Box
                   delay={0.7}
+                  title={t("navbar.sponsors")}
+                  Href={"/sponsors"}
+                  icon={false}
+                />
+              </div>
+
+              <span
+                className={classNames(
+                  "block h-[0.5px] bg-neutral-700 transition duration-300",
+                  hamburgerMenuIsOpen ? "" : "hidden"
+                )}
+              />
+              <div onClick={() => setHambugerMenuIsOpen(false)}>
+                <Box
+                  delay={0.7}
                   title={t("navbar.shop")}
                   Href={
                     "https://canterbury.nl/en/club-shops/germany/rk03-berlin"
