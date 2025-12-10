@@ -10,7 +10,7 @@ export default function AboutSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const t = useTranslations();
 
-  const onChange = (currentSlide, nextSlide) => {
+  const onChange = (_, nextSlide) => {
     setCurrentSlide(nextSlide);
   };
 

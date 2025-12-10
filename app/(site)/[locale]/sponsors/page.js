@@ -11,7 +11,6 @@ import classNames from "classnames";
 import { Link } from "@/i18n/navigation";
 
 const Sponsors = () => {
-  const [selectedCard, setSelectedCard] = useState(null);
   const [sponsors, setSponsors] = useState([{}]);
   const t = useTranslations();
 
@@ -31,13 +30,11 @@ const Sponsors = () => {
   useEffect(() => {
     const fetchData = async () => {
       const sponsors = await getSponsors();
-
       setSponsors(sponsors);
-      console.log(sponsors);
     };
-
     fetchData();
   }, []);
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -74,7 +71,12 @@ const Sponsors = () => {
                     {sponsors.length > 0 ? (
                       <>
                         {sponsors.map((sponsor, index) => (
-                          <Link href={sponsor.url || ""} key={index}>
+                          <Link
+                            href={sponsor.url || ""}
+                            scroll={false}
+                            key={index}
+                            act
+                          >
                             <motion.div
                               whileHover={{ scale: 1.01 }}
                               transition={{
@@ -83,9 +85,6 @@ const Sponsors = () => {
                                 damping: 7,
                               }}
                               className="card hover:shadow-lg hover:shadow-[#f5cb0d16]"
-                              onClick={() => {
-                                setSelectedCard(sponsor);
-                              }}
                             >
                               <div className={"card-content overflow-hidden"}>
                                 <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center">
