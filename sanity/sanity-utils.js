@@ -147,3 +147,16 @@ export async function getChildProtection() {
       }[0]`
   );
 }
+
+export async function getSponsors() {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "sponsor"]|order(orderRank){
+        _id,
+        _createdAt,
+        "image": image.asset->url,
+        name,
+        shortDescription,
+        url
+      }`
+  );
+}

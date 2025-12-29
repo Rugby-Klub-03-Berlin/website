@@ -4,28 +4,13 @@ import { poppins, space } from "@/public/fonts/fonts";
 import classNames from "classnames";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import biltong from "@/assets/images/sponsoring/biltong.png";
-import jeti from "@/assets/images/sponsoring/jeti.png";
-import bvlt from "@/assets/images/sponsoring/bvlt.png";
-import chezBruno from "@/assets/images/sponsoring/chez-bruno.png";
-import cliffsOfDooneen from "@/assets/images/sponsoring/cliffs-of-dooneen.png";
-import deutscheVermoegensberatung from "@/assets/images/sponsoring/deutsche-vermoegensberatung.png";
-import holzbauSaschaEbel from "@/assets/images/sponsoring/holzbau-saschaebel.png";
-import kpj from "@/assets/images/sponsoring/kpj.png";
-import kraftwerk from "@/assets/images/sponsoring/kraftwerk.png";
-import landladenKastaven from "@/assets/images/sponsoring/landladen-kastaven.png";
-import orankeBodenleger from "@/assets/images/sponsoring/oranke-bodenleger.png";
-import planungsbueroKortas from "@/assets/images/sponsoring/planungsbuero-kortas.png";
-import reweDanielKuehn from "@/assets/images/sponsoring/rewe-danielkuehn.png";
-import royEdelstahl from "@/assets/images/sponsoring/roy-edelstahl.png";
-import steffenClasver from "@/assets/images/sponsoring/steffen-clasver.png";
-import vandenFrancken from "@/assets/images/sponsoring/vanden-francken.png";
-import wildhofMuencheberg from "@/assets/images/sponsoring/wildhof-muencheberg.png";
+import { getSponsors } from "@/sanity/sanity-utils";
 
 export default function Engagement() {
   const t = useTranslations();
+  const [sponsors, setSponsors] = useState([{}]);
 
   const engagements = [
     {
@@ -60,33 +45,8 @@ export default function Engagement() {
     },
   ];
 
-  const sponsoringImages = [
-    biltong,
-    jeti,
-    bvlt,
-    chezBruno,
-    cliffsOfDooneen,
-    deutscheVermoegensberatung,
-    holzbauSaschaEbel,
-    kpj,
-    kraftwerk,
-    landladenKastaven,
-    orankeBodenleger,
-    planungsbueroKortas,
-    reweDanielKuehn,
-    royEdelstahl,
-    steffenClasver,
-    vandenFrancken,
-    wildhofMuencheberg,
-  ];
-
-  const firstRow = sponsoringImages.slice(
-    0,
-    Math.ceil(sponsoringImages.length / 2)
-  );
-  const secondRow = sponsoringImages.slice(
-    Math.ceil(sponsoringImages.length / 2)
-  );
+  const firstRow = sponsors.slice(0, Math.ceil(sponsors.length / 2));
+  const secondRow = sponsors.slice(Math.ceil(sponsors.length / 2));
 
   useEffect(() => {
     document.getElementById("categories").onmousemove = (e) => {
@@ -106,6 +66,14 @@ export default function Engagement() {
   const sendMail = () => {
     window.location.href = `mailto:vorsitzender@rugbyklub03.berlin`;
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const sponsors = await getSponsors();
+      setSponsors(sponsors);
+    };
+    fetchData();
+  }, []);
 
   return (
     <AnimatePresence mode="wait">
@@ -178,7 +146,7 @@ export default function Engagement() {
                 {firstRow.map((src, index) => (
                   <Image
                     key={index}
-                    src={src}
+                    src={src.image}
                     alt={`Logo ${index}`}
                     width={0}
                     height={0}
@@ -191,7 +159,7 @@ export default function Engagement() {
                 {secondRow.map((src, index) => (
                   <Image
                     key={index}
-                    src={src}
+                    src={src.image}
                     alt={`Logo ${index}`}
                     width={0}
                     height={0}
