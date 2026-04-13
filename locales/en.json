@@ -52,7 +52,7 @@
       "markedTitle": "club",
       "first": {
         "bottom": "We are Berlin's greatest Rugby club, located in Weißensee. We love and live rugby, on and off the pitch.",
-        "top": "We offer Rugby Union and touch rugby, 15s and 7s rugby. Our 1st men's team is part of the 1st Bundesliga."
+        "top": "We offer Rugby Union and touch rugby, 15s and 7s rugby. Our first women's team plays in the 1st Bundesliga B and our men's team competes in the 2nd Bundesliga."
       },
       "second": {
         "bottom": "We offer rugby practice for everyone starting from 2.5 years. Accompanied by our coaches, our teams regularly train with us at Buschallee.",
@@ -67,9 +67,9 @@
   "club": {
     "aboutUs": {
       "title": "About us",
-      "firstParagraph": "Rugby Klub 03 Berlin e.V. is Berlin's largest rugby club with more than 400 members. The origins of the club lie in the former multisport club Post SV from which it emerged in 2003. The history of rugby in Weißensee goes back even further to the year 1967.",
+      "firstParagraph": "Rugby Klub 03 Berlin e.V. is Berlin's largest rugby club with almost 500 members. The origins of the club lie in the former multisport club Post SV from which it emerged in 2003. The history of rugby in Weißensee goes back even further to the year 1967.",
       "secondParagraph": "Since the founding of the independent club 20 years ago, the club has grown steadily and since 2010 it has been able to enjoy extraordinary facilities in Buschallee Stadium with two game-size pitches and a training pitch, a rarity for sports clubs in Berlin.",
-      "thirdParagraph": "Thanks to the commitment of the members and in cooperation with the local administration, this facility is being cared for, maintained, and further expanded. Rugby Klub 03 has a competitive women's team (RK03 Sevens; SG Berlin XVs), a men's first XV team competing in the first division of the Bundesliga, a men's second team (Regionalliga), and a men's Sevens team. Various touch rugby training groups offer further options for adult members. However, special attention is paid to youth development.",
+      "thirdParagraph": "Thanks to the commitment of the members and in cooperation with the local administration, this facility is being cared for, maintained, and further expanded. In addition to two men's teams (the first men's team plays in the 2nd Bundesliga) and a women's 7s rugby team competing in the 1st Bundesliga B. We also have various touch rugby training groups. However, special attention is paid to youth development.",
       "fourthParagraph": "Almost half of RK03 club members are minors and play in the numerous age groups of the youth section. The first rugby experience can be gained from the age of 3 ½ in the U6. The youth are accompanied by qualified and committed coaches who encourage and challenge them in an age-appropriate manner."
     },
     "board": {

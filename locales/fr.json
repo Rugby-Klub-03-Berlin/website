@@ -52,7 +52,7 @@
       "markedTitle": "association",
       "first": {
         "bottom": "Nous sommes le plus grand club de rugby de Berlin, situé à Weißensee. Nous aimons et vivons le rugby, sur et en dehors du terrain.",
-        "top": "Nous proposons du rugby à contact et du touch rugby, du rugby à 15 et à 7. Avec notre première équipe masculine, nous sommes même représentés en 1ère Bundesliga."
+        "top": "Nous proposons du rugby à contact et du touch rugby, du rugby à 15 et à 7. Notre première équipe féminine joue en 1ère Bundesliga B et notre première équipe masculine est représentée en 2e Bundesliga."
       },
       "second": {
         "bottom": "Nous proposons des entraînements pour tous, à partir de 2 ans et demi. Dirigés par nos instructeurs, les différents groupes d'âge s'entraînent régulièrement chez nous à Buschallee.",
@@ -67,9 +67,9 @@
   "club": {
     "aboutUs": {
       "title": "À Propos De Nous",
-      "firstParagraph": "Le Rugby Klub 03 Berlin e.V., avec plus de 400 membres, est le plus grand club de rugby de Berlin. Bien qu'il ait été créé en 2003 à partir de la section rugby de l'ancien Post SV, l'histoire du rugby à Weißensee remonte à 1967.",
+      "firstParagraph": "Le Rugby Klub 03 Berlin e.V. est le plus grand club de rugby de Berlin, avec près de 500 membres. Bien qu'il ait été créé en 2003 à partir de la section rugby de l'ancien Post SV, l'histoire du rugby à Weißensee remonte à 1967.",
       "secondParagraph": "Depuis la création du club indépendant il y a 20 ans, le club a constamment grandi et, depuis 2010, profite de l'utilisation d'un complexe de rugby bien équipé comprenant 2 terrains de jeu et un terrain d'entraînement, ce qui n'est pas une évidence pour les clubs de sport, et en particulier de rugby, à Berlin.",
-      "thirdParagraph": "Grâce à l'engagement des membres et en collaboration avec le bureau du district, ce complexe est choyé, entretenu et développé. En plus de deux équipes masculines (la première équipe masculine joue en 1ère Bundesliga), il y a une équipe féminine active en rugby à 7, ainsi que divers groupes d'entraînement de touch rugby. Toutefois, une attention particulière est accordée à la promotion de la jeunesse.",
+      "thirdParagraph": "Grâce à l'engagement des membres et en collaboration avec le bureau du district, ce complexe est choyé, entretenu et développé. Outre deux équipes masculines (la première équipe masculine évolue en 2e division), qui participe à la 1re division B, nous avons également une équipe féminine active de rugby à sept. Nous proposons en outre plusieurs groupes d'entraînement de touch-rugby. Toutefois, une attention particulière est accordée à la promotion de la jeunesse.",
       "fourthParagraph": "Presque la moitié de tous les membres sont mineurs et jouent dans les différentes catégories d'âge de la section jeunesse. Les premières expériences de rugby peuvent être acquises dès l'âge de 3 ans et demi dans la catégorie U6. Les enfants et les jeunes sont accompagnés par des instructeurs qualifiés et dévoués, qui les encouragent et les défient de manière appropriée."
     },
     "board": {
