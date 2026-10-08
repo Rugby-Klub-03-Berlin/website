@@ -26,7 +26,17 @@ const Hero = () => {
             <br />
             <br /> {t("club.aboutUs.fourthParagraph")}
             <br />
-            <br /> {t("club.aboutUs.fifthParagraph")}
+            <br />
+            {t.rich("club.aboutUs.fifthParagraph", {
+              email: (chunks) => (
+                <a
+                  href="mailto:info@rugbyklub03.berlin"
+                  className="text-dominantColor hover:underline transition-all"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
           </div>
         </h1>
       </div>
