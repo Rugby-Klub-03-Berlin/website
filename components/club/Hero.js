@@ -13,7 +13,7 @@ const Hero = () => {
           <div
             className={classNames(
               "text-4xl pb-10 font-light",
-              poppins.className
+              poppins.className,
             )}
           >
             {t("club.aboutUs.title")}
@@ -25,6 +25,8 @@ const Hero = () => {
             {t("club.aboutUs.thirdParagraph")}
             <br />
             <br /> {t("club.aboutUs.fourthParagraph")}
+            <br />
+            <br /> {t("club.aboutUs.fifthParagraph")}
           </div>
         </h1>
       </div>
